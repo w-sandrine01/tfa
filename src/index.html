@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DWMA project</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="styles/app.css">
+  <link rel="stylesheet" href="https://use.typekit.net/eil3xei.css">
+  <script src="scripts/app.js" defer></script>
+  <script
+src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js">
+</script>
+</head>
+
+
+<body>
+
+  <section class="intro">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="intro__left">
+
+      <div class="title">
+        <h1>
+        <span>
+          <span class="title--big">Book</span>
+          <img class="imgShelf" src="assets/images/shelf.jpg" alt="Dozen of books on a shelf">
+        </span>
+        <span>
+          <img class="imgMeeting" src="assets/images/meeting.jpg" alt="A group of people talking and sitting around tables in a cafe">
+          <span class="title--big--italic">Hive</span>  
+        </span>
+      </h1>
+      </div>
+     
+      <p class="title__sub">
+        Get varied reading suggestions from real people. Join a community of passionate bookworms looking to discuss 
+        characters and unravel plot twists together. 
+      </p> 
+
+    </div>
+
+
+
+    <div class="intro__right">
+
+      <div class="intro__right__desc">
+          <p class="desc--bold">
+            BookHive ditches algorithms and allows users to get tailored book suggestions from fellow bookworms and friends. 
+            Whether you're looking for recommendations on a specific genre or author, or just need someone to discuss the 
+            latest plot twist with, BookHive has got you covered.
+          </p>
+      </div>
+
+
+      <div class="intro__right__pros">
+
+        <div class="container__pros">
+
+          <div class="pro active">
+            <div class="contentOpen">              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M54 33.92V7.73A5.77 5.77 0 0 0 48.21 2H7.79A5.77 5.77 0 0 0 2 7.73v25.7a5.77 5.77 0 0 0 5.79 5.73H10v13.23a2 2 0 0 0 3.57 1.24l11-14h23.64A5.77 5.77 0 0 0 54 33.92Zm-30.42 1.73a2 2 0 0 0-1.57.76L14 46.6v-9.44a2 2 0 0 0-2-2H7.79A1.76 1.76 0 0 1 6 33.43V7.73A1.76 1.76 0 0 1 7.79 6h40.42A1.76 1.76 0 0 1 50 7.73v26.2a1.76 1.76 0 0 1-1.79 1.73Z"/><path d="M60 13.34a2 2 0 0 0-2 2V41a1.76 1.76 0 0 1-1.79 1.72H52a2 2 0 0 0-2 2v9.45L42 44a2 2 0 0 0-1.57-.76H28a2 2 0 0 0 0 4h11.45l11 14A2 2 0 0 0 54 60V46.77h2.21A5.77 5.77 0 0 0 62 41V15.34a2 2 0 0 0-2-2Z"/></svg>
+              <h2 class="title--cap">Accountability</h2> 
+              <p>
+                Having a reading buddy is like having a cheerleader for your reading goals. They'll hold you 
+                accountable and give you the encouragement you need to stay committed !
+              </p>
+            </div>
+
+            <div class="contentClosed">              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M54 33.92V7.73A5.77 5.77 0 0 0 48.21 2H7.79A5.77 5.77 0 0 0 2 7.73v25.7a5.77 5.77 0 0 0 5.79 5.73H10v13.23a2 2 0 0 0 3.57 1.24l11-14h23.64A5.77 5.77 0 0 0 54 33.92Zm-30.42 1.73a2 2 0 0 0-1.57.76L14 46.6v-9.44a2 2 0 0 0-2-2H7.79A1.76 1.76 0 0 1 6 33.43V7.73A1.76 1.76 0 0 1 7.79 6h40.42A1.76 1.76 0 0 1 50 7.73v26.2a1.76 1.76 0 0 1-1.79 1.73Z"/><path d="M60 13.34a2 2 0 0 0-2 2V41a1.76 1.76 0 0 1-1.79 1.72H52a2 2 0 0 0-2 2v9.45L42 44a2 2 0 0 0-1.57-.76H28a2 2 0 0 0 0 4h11.45l11 14A2 2 0 0 0 54 60V46.77h2.21A5.77 5.77 0 0 0 62 41V15.34a2 2 0 0 0-2-2Z"/></svg>
+              <h2 class="title--cap">Accountability</h2> 
+            </div>
+          </div>
+
+
+          <div class="pro">
+            <div class="contentOpen">
+              <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 512 512"><style>.st3{fill:none;stroke:#231f20;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}</style><path d="M408.09 462H103.91C74.14 462 50 437.86 50 408.09V103.91C50 74.14 74.14 50 103.91 50h304.17C437.86 50 462 74.14 462 103.91v304.17c0 29.78-24.14 53.92-53.91 53.92z" class="st3"/><path d="M317.24 382.17v25.75a8.54 8.54 0 0 1-8.58 8.58H199.22a8.54 8.54 0 0 1-8.58-8.58v-25.75a8.54 8.54 0 0 1 8.58-8.58h109.44a8.534 8.534 0 0 1 8.58 8.58z" class="st3"/><path d="M336.49 208.59c7.69 4.05 15.2 22.59 15.74 33.56 2.15 43.99-15.56 78.32-30.58 93.88-9.3 9.66-15.74 26.29-19.25 37.55M252.03 226.47c-.3-.3-.6-.54-.83-.83-4.71-4.89-4.41-12.1 0-16.87.24-.36.54-.66.83-.83M295.24 272.79c-.83.6-1.67 1.13-2.56 1.73-6.56 4.29-13.77 8.52-20.56 13.29-13.53 9.54-25.33 21.16-26.11 39.64M173.61 184.49c-.36.3-2.4 2.35-2.7 2.76-7.45 9.3-4.67 49.15-5.2 89.69-.54 42.38 19.15 41.39 29.88 58.02 7.03 10.97 6.68 28.13 5.6 38.63" class="st3"/><path d="M187.51 287.89h0c-11.63 0-21.06-9.43-21.06-21.06v-65.95c0-11.63 9.43-21.06 21.06-21.06h0c11.63 0 21.06 9.43 21.06 21.06v65.95c-.01 11.64-9.43 21.06-21.06 21.06zM251.19 208.77c-4.41 4.77-4.71 11.98 0 16.87v41.19c0 11.62-9.42 21.04-21.04 21.04s-21.04-9.42-21.04-21.04v-80.17c0-11.62 9.42-21.04 21.04-21.04 5.84 0 11.09 2.32 14.9 6.14 3.81 3.81 6.14 9.06 6.14 14.9v22.11zM295.24 272.79c7.39-5.07 13.53-10.31 16.75-16.69 7.09-14.13-3.4-20.03-17.64-22.65-.06 0-.12-.06-.24-.06-9.48-1.73-20.56-2.09-29.33-2.5-5.72-.3-9.95-1.97-12.76-4.41M252.03 207.94c1.91-1.85 4.35-3.16 7.39-3.87 6.02-1.43 19.73-3.99 34.69-4.41h.24c15.08-.42 31.29 1.43 42.14 8.94" class="st3"/><path d="M294.11 166.57v33.08c-14.96.42-28.67 2.98-34.69 4.41-3.04.72-5.48 2.03-7.39 3.87v-41.37c0-11.62 9.42-21.1 21.04-21.1 5.84 0 11.09 2.38 14.9 6.2 3.82 3.82 6.14 9.13 6.14 14.91zM292.68 274.52c.89-2.38 1.43-5.01 1.43-7.69v-33.44c-9.48-1.73-20.56-2.09-29.33-2.5-5.72-.3-9.95-1.97-12.76-4.41v40.35c0 11.33 8.88 20.5 20.09 20.98M311.99 256.1c-3.22 6.38-9.36 11.62-16.75 16.69-.6-1.91-.89-3.87-.89-5.96v-33.38c14.24 2.62 24.74 8.52 17.64 22.65zM336.49 191.43v17.17c-10.85-7.51-27.06-9.36-42.14-8.94v-8.23c0-11.62 9.48-21.04 21.1-21.04 5.78 0 11.09 2.32 14.9 6.14 3.76 3.81 6.14 9.05 6.14 14.9zM253.06 95.5v25.03M399.06 194.19h-25.04M137.98 194.19h-25.04M339.63 114.37l-17.7 17.7M169.39 114.37l17.7 17.7" class="st3"/></svg>
+              <h2 class="title--cap">Motivation</h2> 
+              <p>
+                Nothing beats the feeling of having a friend to share your love of books with ! You'll be 
+                more motivated to read, discuss, and enjoy a book together.
+              </p>
+            </div>
+
+            <div class="contentClosed">
+              <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 512 512"><style>.st3{fill:none;stroke:#231f20;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}</style><path d="M408.09 462H103.91C74.14 462 50 437.86 50 408.09V103.91C50 74.14 74.14 50 103.91 50h304.17C437.86 50 462 74.14 462 103.91v304.17c0 29.78-24.14 53.92-53.91 53.92z" class="st3"/><path d="M317.24 382.17v25.75a8.54 8.54 0 0 1-8.58 8.58H199.22a8.54 8.54 0 0 1-8.58-8.58v-25.75a8.54 8.54 0 0 1 8.58-8.58h109.44a8.534 8.534 0 0 1 8.58 8.58z" class="st3"/><path d="M336.49 208.59c7.69 4.05 15.2 22.59 15.74 33.56 2.15 43.99-15.56 78.32-30.58 93.88-9.3 9.66-15.74 26.29-19.25 37.55M252.03 226.47c-.3-.3-.6-.54-.83-.83-4.71-4.89-4.41-12.1 0-16.87.24-.36.54-.66.83-.83M295.24 272.79c-.83.6-1.67 1.13-2.56 1.73-6.56 4.29-13.77 8.52-20.56 13.29-13.53 9.54-25.33 21.16-26.11 39.64M173.61 184.49c-.36.3-2.4 2.35-2.7 2.76-7.45 9.3-4.67 49.15-5.2 89.69-.54 42.38 19.15 41.39 29.88 58.02 7.03 10.97 6.68 28.13 5.6 38.63" class="st3"/><path d="M187.51 287.89h0c-11.63 0-21.06-9.43-21.06-21.06v-65.95c0-11.63 9.43-21.06 21.06-21.06h0c11.63 0 21.06 9.43 21.06 21.06v65.95c-.01 11.64-9.43 21.06-21.06 21.06zM251.19 208.77c-4.41 4.77-4.71 11.98 0 16.87v41.19c0 11.62-9.42 21.04-21.04 21.04s-21.04-9.42-21.04-21.04v-80.17c0-11.62 9.42-21.04 21.04-21.04 5.84 0 11.09 2.32 14.9 6.14 3.81 3.81 6.14 9.06 6.14 14.9v22.11zM295.24 272.79c7.39-5.07 13.53-10.31 16.75-16.69 7.09-14.13-3.4-20.03-17.64-22.65-.06 0-.12-.06-.24-.06-9.48-1.73-20.56-2.09-29.33-2.5-5.72-.3-9.95-1.97-12.76-4.41M252.03 207.94c1.91-1.85 4.35-3.16 7.39-3.87 6.02-1.43 19.73-3.99 34.69-4.41h.24c15.08-.42 31.29 1.43 42.14 8.94" class="st3"/><path d="M294.11 166.57v33.08c-14.96.42-28.67 2.98-34.69 4.41-3.04.72-5.48 2.03-7.39 3.87v-41.37c0-11.62 9.42-21.1 21.04-21.1 5.84 0 11.09 2.38 14.9 6.2 3.82 3.82 6.14 9.13 6.14 14.91zM292.68 274.52c.89-2.38 1.43-5.01 1.43-7.69v-33.44c-9.48-1.73-20.56-2.09-29.33-2.5-5.72-.3-9.95-1.97-12.76-4.41v40.35c0 11.33 8.88 20.5 20.09 20.98M311.99 256.1c-3.22 6.38-9.36 11.62-16.75 16.69-.6-1.91-.89-3.87-.89-5.96v-33.38c14.24 2.62 24.74 8.52 17.64 22.65zM336.49 191.43v17.17c-10.85-7.51-27.06-9.36-42.14-8.94v-8.23c0-11.62 9.48-21.04 21.1-21.04 5.78 0 11.09 2.32 14.9 6.14 3.76 3.81 6.14 9.05 6.14 14.9zM253.06 95.5v25.03M399.06 194.19h-25.04M137.98 194.19h-25.04M339.63 114.37l-17.7 17.7M169.39 114.37l17.7 17.7" class="st3"/></svg>
+              <h2 class="title--cap">Motivation</h2> 
+
+            </div>
+          </div>
+
+
+          <div class="pro">
+            <div class="contentOpen">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M58.72 18.2a2 2 0 0 0-1-1.65L33 2.27a2 2 0 0 0-2 0L6.27 16.55a2 2 0 0 0-1 1.73v27.44a2 2 0 0 0 1 1.73L31 61.73a2.06 2.06 0 0 0 2 0l24.73-14.28a2 2 0 0 0 1-1.73c-.01-.08.02-27.45-.01-27.52ZM32 6.31l20.73 12L32 30.25l-20.73-12ZM9.27 21.74 30 33.71v22.83l-20.73-12ZM34 56.54V33.71l20.73-12v22.86Z" data-name="Layer 95"/></svg>
+              <h2 class="title--cap">New perspectives</h2> 
+              <p>
+                Two heads are better than one. You might be surprised at the new ideas and fresh angles 
+                that reading buddies bring to the story.
+              </p>
+            </div>
+
+            <div class="contentClosed">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M58.72 18.2a2 2 0 0 0-1-1.65L33 2.27a2 2 0 0 0-2 0L6.27 16.55a2 2 0 0 0-1 1.73v27.44a2 2 0 0 0 1 1.73L31 61.73a2.06 2.06 0 0 0 2 0l24.73-14.28a2 2 0 0 0 1-1.73c-.01-.08.02-27.45-.01-27.52ZM32 6.31l20.73 12L32 30.25l-20.73-12ZM9.27 21.74 30 33.71v22.83l-20.73-12ZM34 56.54V33.71l20.73-12v22.86Z" data-name="Layer 95"/></svg>
+              <h2 class="title--cap">New perspectives</h2> 
+            </div>
+          </div>
+
+
+          <div class="pro">
+            <div class="contentOpen">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"><path fill="#000" d="M43.217 23.783a9.494 9.494 0 0 0-2.944-2 6.493 6.493 0 1 0-8.518-9.711 7.988 7.988 0 0 0-15.51 0 6.492 6.492 0 1 0-8.515 9.712A9.514 9.514 0 0 0 2 30.5V35a5.006 5.006 0 0 0 5 5h7.026A4.979 4.979 0 0 0 18 42h12a4.977 4.977 0 0 0 3.974-2H41a5.006 5.006 0 0 0 5-5v-4.5a9.436 9.436 0 0 0-2.783-6.717ZM36.5 12a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm-5.354 10.654a10.982 10.982 0 0 0-2.989-1.832 8.06 8.06 0 0 0 2.257-2.061 6.517 6.517 0 0 0 2.32 3.027 9.597 9.597 0 0 0-1.588.866ZM24 8a6 6 0 1 1 0 12 6 6 0 0 1 0-12Zm-7.146 14.654a9.597 9.597 0 0 0-1.588-.866 6.517 6.517 0 0 0 2.32-3.027 8.06 8.06 0 0 0 2.257 2.061 10.982 10.982 0 0 0-2.989 1.832ZM7 16.5a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM7 38a3 3 0 0 1-3-3v-4.5a7.49 7.49 0 0 1 11.43-6.379A10.937 10.937 0 0 0 13 31v6c0 .336.033.67.1 1H7Zm26-1a3 3 0 0 1-3 3H18a3 3 0 0 1-3-3v-6a9 9 0 0 1 18 0v6Zm11-2a3 3 0 0 1-3 3h-6.1c.067-.33.1-.664.1-1v-6a10.937 10.937 0 0 0-2.43-6.879A7.494 7.494 0 0 1 44 30.5V35Z"/></svg>
+              <h2 class="title--cap">Social connections</h2> 
+              <p>
+                Build lasting connections with fellow readers based on a shared passion. The book doesn’t 
+                have to end when the pages do.
+              </p>
+            </div>
+
+            <div class="contentClosed">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"><path fill="#000" d="M43.217 23.783a9.494 9.494 0 0 0-2.944-2 6.493 6.493 0 1 0-8.518-9.711 7.988 7.988 0 0 0-15.51 0 6.492 6.492 0 1 0-8.515 9.712A9.514 9.514 0 0 0 2 30.5V35a5.006 5.006 0 0 0 5 5h7.026A4.979 4.979 0 0 0 18 42h12a4.977 4.977 0 0 0 3.974-2H41a5.006 5.006 0 0 0 5-5v-4.5a9.436 9.436 0 0 0-2.783-6.717ZM36.5 12a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm-5.354 10.654a10.982 10.982 0 0 0-2.989-1.832 8.06 8.06 0 0 0 2.257-2.061 6.517 6.517 0 0 0 2.32 3.027 9.597 9.597 0 0 0-1.588.866ZM24 8a6 6 0 1 1 0 12 6 6 0 0 1 0-12Zm-7.146 14.654a9.597 9.597 0 0 0-1.588-.866 6.517 6.517 0 0 0 2.32-3.027 8.06 8.06 0 0 0 2.257 2.061 10.982 10.982 0 0 0-2.989 1.832ZM7 16.5a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM7 38a3 3 0 0 1-3-3v-4.5a7.49 7.49 0 0 1 11.43-6.379A10.937 10.937 0 0 0 13 31v6c0 .336.033.67.1 1H7Zm26-1a3 3 0 0 1-3 3H18a3 3 0 0 1-3-3v-6a9 9 0 0 1 18 0v6Zm11-2a3 3 0 0 1-3 3h-6.1c.067-.33.1-.664.1-1v-6a10.937 10.937 0 0 0-2.43-6.879A7.494 7.494 0 0 1 44 30.5V35Z"/></svg>
+              <h2 class="title--cap">Social connections</h2> 
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <section class="why">
+
+    <div class="why__title">
+      <h2 class="title--section">
+        Why a buddy read app ?
+      </h2>
+    </div>
+
+    <div class="why__pic">
+      <img class="imgBed" src="assets/images/readingBed.jpg" alt="">
+
+    </div>
+
+    <div class="content1">
+      <h3> 
+        As a bookworm myself, I wish I knew someone equally as interested as me in the books I read.
+      </h3>
+       <p>
+        Just like with good TV series, when a good book comes to an end, or even during it, you naturally want to share your 
+        thoughts about it. Which is a difficult thing to do if you don’t know any other reader with similar tastes in your 
+        social circle. I recently discovered a book which reignited my love for reading with the different emotions I 
+        experienced during it. Though when I arrived at the end, I felt this urge to share my hype for the book with someone 
+        who would understand where I was coming from but I found myself alone.
+      </p>
+      <p>
+        That’s when I decided that I wanted to be part of a small book community so I created a Discord server where I have 
+        met many nice and interesting people. While we manage to make it work, the platform is not optimized for a virtual 
+        book club. So which one is ?
+      </p>
+    </div>
+
+    <div class="content2">
+      <div>
+        <h3> 
+          Suggestions are a bit all over the place !
+        </h3>
+        <p>
+          After doing some research online and talking to members of the reading community, I’ve 
+          noticed that no one really refers to one platform when it comes to buddy reads. People 
+          try to meet reading buddies via other platforms such as Instagram, Facebook, Reddit, 
+          Discord… Most book oriented apps offer recommendations for new books, latest releases, 
+          and a virtual library to track your books but they lack social features because it’s not 
+          their primary focus. 
+        </p>
+      </div>
+        
+      <div>
+        <h3> 
+          In short, there is room for improvement ! 
+        </h3>
+        <p>
+          The main difficulties that people have are being in a different time zone, falling 
+          behind on the reading or on the contrary, finishing way ahead of the other person. And 
+          like I mentioned earlier, they don’t have a specific platform where to exchange so they 
+          have to go for other alternatives and make-do with what they can find.
+        </p>
+      </div>
+      
+    </div>
+    <div class="bg">
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+  <section class="interviews">
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+    <div class="circle6"></div>
+
+
+    <div class="interviews__title">
+      <h2 class="title--section">
+        Meeting fellow readers
+      </h2>
+    </div>
+
+    <div class="feedback">
+
+      <div>
+        <h3> 
+          The best place to get feedback is directly from the users.
+        </h3>
+        <p>
+          I asked within my social circle who enjoys reading and if they knew other people who 
+          did. I had a few in-person conversations but I chose to do my interviews via text, 
+          this way I automatically had a transcript and the people I interviewed had time to 
+          develop their response. I also reached out to some Americans from a book Discord 
+          server which basically makes them the perfect interviewees for the subject given that 
+          Discord is a social platform to begin with.
+        </p>
+      </div>
+
+      <div class="interviews__pic">
+        <img class="imgPc" src="assets/images/pcCoffee.jpg" alt="">
+      </div>
+      
+    </div>
+
+
+    <div class="question q1">
+      <h4>How often do you read ?</h4>
+
+      <div class="q1__content">
+        <div>
+          <p class="rep">“I read just about every day. I play audiobooks roughly 6-8 hours a day while I work.”</p>
+          <p class="rep">“I try to read at least 20-30 minutes everyday”</p>
+          <p class="rep">“J'essaye de lire une bonne heure au moins 2 fois par semaine quand je suis plus libre !”
+        </div>
+
+        <p>
+          My first interview guide helped me realize that I had to redefine my choice of users. 
+          At first, I had targeted readers in the book community as a whole but what I didn’t 
+          think about is that there are different types of readers. 
+        </p>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="question q2">
+      <h4>Would you be interested in meeting other readers or participating in a book club ?</h4>
+
+      <div class="q2__content">
+        <div>
+          <p class="rep">
+            “Ça pourrait être cool ne serait-ce que pour être motivé à lire plus souvent”
+          </p>
+          <p class="rep">
+            “Probably not unless I get into reading a lot more. Maybe I would because I've 
+            never done it before so just to try something new but I wouldn't do it alone, I'd do it with a friend.” 
+          </p>
+        </div>
+
+        <p>
+          The issue in my first sampling was interviewing people who don’t have a particular interest in reading or 
+          used to be avid readers in their early years, though it did provide an insight on what could potentially 
+          motivate them. So from those readers, I aimed to find out if a buddy read would do just that.
+        </p>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="question q3">
+      <h4>Do you have friends or family with whom you can discuss books with ?</h4>
+
+      <div class="q3__content">
+        <p>
+          I then realized my questions were too broad and focused my second interview guide on learning about their 
+          reader’s social life. Generally they didn’t have anyone to vent about books with, or only very few close 
+          people and if it wasn’t something they were actively looking for, they weren’t completely closed to the 
+          idea and actually thought it could help them take up reading again.
+        </p>
+
+        <div>
+          <p class="rep">  
+            “Sometimes I recommend books to others, some read them but don't really talk about it with me. A week ago 
+            I read a book that I got from a friend who had read it. I said what I thought of it but the only response 
+            I got was “I'm glad you enjoyed the book" so I couldn't really discuss it.”
+          </p>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="question__pic">
+      <img class="imgPile" src="assets/images/bookStack.jpg" alt="Piles of books in sun rays against a white wall">
+    </div>
+
+
+    <div class="question q4">
+      <h4>Would you be interested in meeting readers with similar tastes and reading goals as you ?</h4>
+
+      <div class="q4__content">
+        <div>
+          <p class="rep">  
+            “J’ai parfois l’impression que les sous textes des livres que je lis m’échappent et c’est assez frustrant. 
+            Si quelqu’un pouvait compléter mon raisonnement ce serait idéal” 
+          </p>
+          <p class="rep">  
+            “Ça permet de remettre en question notre interprétation, et puis c'est aussi très chouette de pouvoir 
+            partager son point de vue avec quelqu'un qui est intéressé et qui comprend de quoi on parle” 
+
+          </p>
+          <p class="rep">  
+            “I definitely would love finding a community of people where people can share their love for books and 
+            such.” 
+          </p>
+        </div>
+
+        <div class="q4__ccl">
+          <p>
+            So now that I’ve established that buddy reading is something that’s sought out by many amongst the book 
+            community, I drew up new questions aimed at readers who are looking to connect with others. In my third 
+            and final guide I aimed to identify which features readers would enjoy in a buddy reading app. 
+          </p>
+          <p>The plot thickens - keep reading to find out more.</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <section class="apps">
+
+    <div class="apps__title">
+      <h2 class="title--section">
+        What can be improved in exisitng apps ?
+      </h2>
+    </div>
+
+
+     <div class="container__apps">
+
+          <div class="app active">
+            <div class="contentOpen">              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M54 33.92V7.73A5.77 5.77 0 0 0 48.21 2H7.79A5.77 5.77 0 0 0 2 7.73v25.7a5.77 5.77 0 0 0 5.79 5.73H10v13.23a2 2 0 0 0 3.57 1.24l11-14h23.64A5.77 5.77 0 0 0 54 33.92Zm-30.42 1.73a2 2 0 0 0-1.57.76L14 46.6v-9.44a2 2 0 0 0-2-2H7.79A1.76 1.76 0 0 1 6 33.43V7.73A1.76 1.76 0 0 1 7.79 6h40.42A1.76 1.76 0 0 1 50 7.73v26.2a1.76 1.76 0 0 1-1.79 1.73Z"/><path d="M60 13.34a2 2 0 0 0-2 2V41a1.76 1.76 0 0 1-1.79 1.72H52a2 2 0 0 0-2 2v9.45L42 44a2 2 0 0 0-1.57-.76H28a2 2 0 0 0 0 4h11.45l11 14A2 2 0 0 0 54 60V46.77h2.21A5.77 5.77 0 0 0 62 41V15.34a2 2 0 0 0-2-2Z"/></svg>
+              <h2 class="title--cap">Goodreads</h2> 
+              <p>
+                Having a reading buddy is like having a cheerleader for your reading goals. They'll hold you 
+                accountable and give you the encouragement you need to stay committed !
+              </p>
+            </div>
+
+            <div class="contentClosed">              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M54 33.92V7.73A5.77 5.77 0 0 0 48.21 2H7.79A5.77 5.77 0 0 0 2 7.73v25.7a5.77 5.77 0 0 0 5.79 5.73H10v13.23a2 2 0 0 0 3.57 1.24l11-14h23.64A5.77 5.77 0 0 0 54 33.92Zm-30.42 1.73a2 2 0 0 0-1.57.76L14 46.6v-9.44a2 2 0 0 0-2-2H7.79A1.76 1.76 0 0 1 6 33.43V7.73A1.76 1.76 0 0 1 7.79 6h40.42A1.76 1.76 0 0 1 50 7.73v26.2a1.76 1.76 0 0 1-1.79 1.73Z"/><path d="M60 13.34a2 2 0 0 0-2 2V41a1.76 1.76 0 0 1-1.79 1.72H52a2 2 0 0 0-2 2v9.45L42 44a2 2 0 0 0-1.57-.76H28a2 2 0 0 0 0 4h11.45l11 14A2 2 0 0 0 54 60V46.77h2.21A5.77 5.77 0 0 0 62 41V15.34a2 2 0 0 0-2-2Z"/></svg>
+              <h2 class="title--cap">Goodreads</h2> 
+            </div>
+          </div>
+
+
+          <div class="app">
+            <div class="contentOpen">
+              <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 512 512"><style>.st3{fill:none;stroke:#231f20;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}</style><path d="M408.09 462H103.91C74.14 462 50 437.86 50 408.09V103.91C50 74.14 74.14 50 103.91 50h304.17C437.86 50 462 74.14 462 103.91v304.17c0 29.78-24.14 53.92-53.91 53.92z" class="st3"/><path d="M317.24 382.17v25.75a8.54 8.54 0 0 1-8.58 8.58H199.22a8.54 8.54 0 0 1-8.58-8.58v-25.75a8.54 8.54 0 0 1 8.58-8.58h109.44a8.534 8.534 0 0 1 8.58 8.58z" class="st3"/><path d="M336.49 208.59c7.69 4.05 15.2 22.59 15.74 33.56 2.15 43.99-15.56 78.32-30.58 93.88-9.3 9.66-15.74 26.29-19.25 37.55M252.03 226.47c-.3-.3-.6-.54-.83-.83-4.71-4.89-4.41-12.1 0-16.87.24-.36.54-.66.83-.83M295.24 272.79c-.83.6-1.67 1.13-2.56 1.73-6.56 4.29-13.77 8.52-20.56 13.29-13.53 9.54-25.33 21.16-26.11 39.64M173.61 184.49c-.36.3-2.4 2.35-2.7 2.76-7.45 9.3-4.67 49.15-5.2 89.69-.54 42.38 19.15 41.39 29.88 58.02 7.03 10.97 6.68 28.13 5.6 38.63" class="st3"/><path d="M187.51 287.89h0c-11.63 0-21.06-9.43-21.06-21.06v-65.95c0-11.63 9.43-21.06 21.06-21.06h0c11.63 0 21.06 9.43 21.06 21.06v65.95c-.01 11.64-9.43 21.06-21.06 21.06zM251.19 208.77c-4.41 4.77-4.71 11.98 0 16.87v41.19c0 11.62-9.42 21.04-21.04 21.04s-21.04-9.42-21.04-21.04v-80.17c0-11.62 9.42-21.04 21.04-21.04 5.84 0 11.09 2.32 14.9 6.14 3.81 3.81 6.14 9.06 6.14 14.9v22.11zM295.24 272.79c7.39-5.07 13.53-10.31 16.75-16.69 7.09-14.13-3.4-20.03-17.64-22.65-.06 0-.12-.06-.24-.06-9.48-1.73-20.56-2.09-29.33-2.5-5.72-.3-9.95-1.97-12.76-4.41M252.03 207.94c1.91-1.85 4.35-3.16 7.39-3.87 6.02-1.43 19.73-3.99 34.69-4.41h.24c15.08-.42 31.29 1.43 42.14 8.94" class="st3"/><path d="M294.11 166.57v33.08c-14.96.42-28.67 2.98-34.69 4.41-3.04.72-5.48 2.03-7.39 3.87v-41.37c0-11.62 9.42-21.1 21.04-21.1 5.84 0 11.09 2.38 14.9 6.2 3.82 3.82 6.14 9.13 6.14 14.91zM292.68 274.52c.89-2.38 1.43-5.01 1.43-7.69v-33.44c-9.48-1.73-20.56-2.09-29.33-2.5-5.72-.3-9.95-1.97-12.76-4.41v40.35c0 11.33 8.88 20.5 20.09 20.98M311.99 256.1c-3.22 6.38-9.36 11.62-16.75 16.69-.6-1.91-.89-3.87-.89-5.96v-33.38c14.24 2.62 24.74 8.52 17.64 22.65zM336.49 191.43v17.17c-10.85-7.51-27.06-9.36-42.14-8.94v-8.23c0-11.62 9.48-21.04 21.1-21.04 5.78 0 11.09 2.32 14.9 6.14 3.76 3.81 6.14 9.05 6.14 14.9zM253.06 95.5v25.03M399.06 194.19h-25.04M137.98 194.19h-25.04M339.63 114.37l-17.7 17.7M169.39 114.37l17.7 17.7" class="st3"/></svg>
+              <h2 class="title--cap">Fable</h2> 
+              <p>
+                Nothing beats the feeling of having a friend to share your love of books with ! You'll be 
+                more motivated to read, discuss, and enjoy a book together.
+              </p>
+            </div>
+
+            <div class="contentClosed">
+              <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 512 512"><style>.st3{fill:none;stroke:#231f20;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}</style><path d="M408.09 462H103.91C74.14 462 50 437.86 50 408.09V103.91C50 74.14 74.14 50 103.91 50h304.17C437.86 50 462 74.14 462 103.91v304.17c0 29.78-24.14 53.92-53.91 53.92z" class="st3"/><path d="M317.24 382.17v25.75a8.54 8.54 0 0 1-8.58 8.58H199.22a8.54 8.54 0 0 1-8.58-8.58v-25.75a8.54 8.54 0 0 1 8.58-8.58h109.44a8.534 8.534 0 0 1 8.58 8.58z" class="st3"/><path d="M336.49 208.59c7.69 4.05 15.2 22.59 15.74 33.56 2.15 43.99-15.56 78.32-30.58 93.88-9.3 9.66-15.74 26.29-19.25 37.55M252.03 226.47c-.3-.3-.6-.54-.83-.83-4.71-4.89-4.41-12.1 0-16.87.24-.36.54-.66.83-.83M295.24 272.79c-.83.6-1.67 1.13-2.56 1.73-6.56 4.29-13.77 8.52-20.56 13.29-13.53 9.54-25.33 21.16-26.11 39.64M173.61 184.49c-.36.3-2.4 2.35-2.7 2.76-7.45 9.3-4.67 49.15-5.2 89.69-.54 42.38 19.15 41.39 29.88 58.02 7.03 10.97 6.68 28.13 5.6 38.63" class="st3"/><path d="M187.51 287.89h0c-11.63 0-21.06-9.43-21.06-21.06v-65.95c0-11.63 9.43-21.06 21.06-21.06h0c11.63 0 21.06 9.43 21.06 21.06v65.95c-.01 11.64-9.43 21.06-21.06 21.06zM251.19 208.77c-4.41 4.77-4.71 11.98 0 16.87v41.19c0 11.62-9.42 21.04-21.04 21.04s-21.04-9.42-21.04-21.04v-80.17c0-11.62 9.42-21.04 21.04-21.04 5.84 0 11.09 2.32 14.9 6.14 3.81 3.81 6.14 9.06 6.14 14.9v22.11zM295.24 272.79c7.39-5.07 13.53-10.31 16.75-16.69 7.09-14.13-3.4-20.03-17.64-22.65-.06 0-.12-.06-.24-.06-9.48-1.73-20.56-2.09-29.33-2.5-5.72-.3-9.95-1.97-12.76-4.41M252.03 207.94c1.91-1.85 4.35-3.16 7.39-3.87 6.02-1.43 19.73-3.99 34.69-4.41h.24c15.08-.42 31.29 1.43 42.14 8.94" class="st3"/><path d="M294.11 166.57v33.08c-14.96.42-28.67 2.98-34.69 4.41-3.04.72-5.48 2.03-7.39 3.87v-41.37c0-11.62 9.42-21.1 21.04-21.1 5.84 0 11.09 2.38 14.9 6.2 3.82 3.82 6.14 9.13 6.14 14.91zM292.68 274.52c.89-2.38 1.43-5.01 1.43-7.69v-33.44c-9.48-1.73-20.56-2.09-29.33-2.5-5.72-.3-9.95-1.97-12.76-4.41v40.35c0 11.33 8.88 20.5 20.09 20.98M311.99 256.1c-3.22 6.38-9.36 11.62-16.75 16.69-.6-1.91-.89-3.87-.89-5.96v-33.38c14.24 2.62 24.74 8.52 17.64 22.65zM336.49 191.43v17.17c-10.85-7.51-27.06-9.36-42.14-8.94v-8.23c0-11.62 9.48-21.04 21.1-21.04 5.78 0 11.09 2.32 14.9 6.14 3.76 3.81 6.14 9.05 6.14 14.9zM253.06 95.5v25.03M399.06 194.19h-25.04M137.98 194.19h-25.04M339.63 114.37l-17.7 17.7M169.39 114.37l17.7 17.7" class="st3"/></svg>
+              <h2 class="title--cap">Fable</h2> 
+
+            </div>
+          </div>
+
+
+          <div class="app">
+            <div class="contentOpen">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M58.72 18.2a2 2 0 0 0-1-1.65L33 2.27a2 2 0 0 0-2 0L6.27 16.55a2 2 0 0 0-1 1.73v27.44a2 2 0 0 0 1 1.73L31 61.73a2.06 2.06 0 0 0 2 0l24.73-14.28a2 2 0 0 0 1-1.73c-.01-.08.02-27.45-.01-27.52ZM32 6.31l20.73 12L32 30.25l-20.73-12ZM9.27 21.74 30 33.71v22.83l-20.73-12ZM34 56.54V33.71l20.73-12v22.86Z" data-name="Layer 95"/></svg>
+              <h2 class="title--cap">Storygraph</h2> 
+              <p>
+                Two heads are better than one. You might be surprised at the new ideas and fresh angles 
+                that reading buddies bring to the story.
+              </p>
+            </div>
+
+            <div class="contentClosed">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M58.72 18.2a2 2 0 0 0-1-1.65L33 2.27a2 2 0 0 0-2 0L6.27 16.55a2 2 0 0 0-1 1.73v27.44a2 2 0 0 0 1 1.73L31 61.73a2.06 2.06 0 0 0 2 0l24.73-14.28a2 2 0 0 0 1-1.73c-.01-.08.02-27.45-.01-27.52ZM32 6.31l20.73 12L32 30.25l-20.73-12ZM9.27 21.74 30 33.71v22.83l-20.73-12ZM34 56.54V33.71l20.73-12v22.86Z" data-name="Layer 95"/></svg>
+              <h2 class="title--cap">Storygraph</h2> 
+            </div>
+          </div>
+
+        
+        </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <section class="solutions">
+
+    <div class="apps__title">
+      <h2 class="title--section">
+        How can I create a social haven for readers ?
+      </h2>
+    </div>
+
+
+    
+
+
+
+
+  </section>
+
+
+</body>
+</html>
