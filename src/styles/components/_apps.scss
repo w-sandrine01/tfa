@@ -1,16 +1,29 @@
 
 
 .apps{
-    background-color: #FCFEA5;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    background-color: #F9F1E5;
 
     &__title{
-        height: 180px;
+        grid-column: 1/14;
+        min-height: 180px;
+        padding: 40px;
         background-color: black;
         border-radius: 200px;
         line-height: 70px;
     }
 
+    .bg{
+        grid-column: 12/14;
+        background-color: #FCFEA5;
+        border-left: 2px solid black;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
     .container__apps{
+        grid-column: 1/12;
         display: flex;
         height: 100vh;
         align-items: flex-end;
@@ -23,11 +36,12 @@
     .app{
         width: 20px;
         border-radius: 8px;
-        flex: 0.8;
+        flex: 0.5;
         margin: 0 4px;
         position: relative;
         transition: all 0.7s ease-out;
         cursor: pointer;
+        overflow: hidden;
 
         div{
             position: absolute;
@@ -35,16 +49,38 @@
 
         .title--cap{
             text-align: center;
+            margin-bottom: 34px;
         }
 
-        p{
-            padding: 29px 24px 12px 24px;
-        }
+        &__list {
+            list-style: none;
+            padding: 0;
+            
+            &__svg {
+                width: 30px;
+                height: 30px;
+                margin-right: 24px;
+                margin-bottom: -4px;
+                flex: 0 0 30px;
+            }
 
+            li{
+                font-family: "mr-eaves-modern", sans-serif;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 23px;  
+                line-height: 29px;
+                color: #202020;        
+                padding: 0 48px;
+                margin-bottom: 20px;
+                display: flex;
+            }
+        }
+          
         
 
         .contentOpen{
-            svg{
+            .app__svg{
                 width: 50px;
                 height: 50px;
                 display: block;
@@ -57,14 +93,26 @@
             width: 30px;
             height: 100%;
             display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: auto;
 
-            svg{
+            .app__svg{
                 width: 50px;
                 height: 50px;
+                align-self:end;
+
             }
             
             .title--cap{
-                transform: rotateZ(-90deg);
+                writing-mode: vertical-lr; 
+                text-align: center;
+                transform: translateX(-50%) translateY(-50%); /* Center the text */
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-bottom: 0;
             }
         }
     } 
@@ -74,16 +122,16 @@
     }
 
     .app:nth-child(1){
-        background-color: #D9CDF3;
+        border: 2px solid black;          
         height: 90%;
     }
     .app:nth-child(2){
-        background-color: #E7DBF2;
-        height: 70%;
+        border: 2px solid black;          
+        height: 75%;
     }
     .app:nth-child(3){
-        background-color: #E7DBF2;
-        height: 80%;
+        border: 2px solid black;          
+        height: 85%;
     }
 
 }

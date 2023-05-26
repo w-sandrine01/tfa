@@ -53,7 +53,7 @@ p{
     font-size: 29px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #5E56D4;
+    color:#202020;
     margin: 0;
 }
 
@@ -64,6 +64,7 @@ p{
     text-transform: uppercase;
     font-size: 8vw;
     margin: auto 24px;
+    line-height: 75%;
 }
 
 section h2{
@@ -88,7 +89,7 @@ h3{
 // Why section ///////////////////////////////////////////
 
 .why .title--section{
-    color: #F9F1E5;
+    color:#FCFEA5;
 }
 
 
@@ -126,4 +127,13 @@ h4{
 
 .solutions .title--section{
     color:#F8F1E8;
+}
+
+
+
+
+// Solutions section ///////////////////////////////////////////
+
+.solutions .title--section{
+    color: #D1C8FF;
 }

@@ -53,7 +53,7 @@ p {
   font-size: 29px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #5E56D4;
+  color: #202020;
   margin: 0;
 }
 
@@ -64,6 +64,7 @@ p {
   text-transform: uppercase;
   font-size: 8vw;
   margin: auto 24px;
+  line-height: 75%;
 }
 
 section h2 {
@@ -85,7 +86,7 @@ h3 {
 }
 
 .why .title--section {
-  color: #F9F1E5;
+  color: #FCFEA5;
 }
 
 .interviews .title--section {
@@ -116,6 +117,10 @@ h4 {
 
 .solutions .title--section {
   color: #F8F1E8;
+}
+
+.solutions .title--section {
+  color: #D1C8FF;
 }
 
 .imgShelf, .imgMeeting {
@@ -421,15 +426,27 @@ h4 {
 }
 
 .apps {
-  background-color: #FCFEA5;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  background-color: #F9F1E5;
 }
 .apps__title {
-  height: 180px;
+  grid-column: 1/14;
+  min-height: 180px;
+  padding: 40px;
   background-color: black;
   border-radius: 200px;
   line-height: 70px;
 }
+.apps .bg {
+  grid-column: 12/14;
+  background-color: #FCFEA5;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
 .apps .container__apps {
+  grid-column: 1/12;
   display: flex;
   height: 100vh;
   align-items: flex-end;
@@ -441,22 +458,43 @@ h4 {
 .apps .app {
   width: 20px;
   border-radius: 8px;
-  flex: 0.8;
+  flex: 0.5;
   margin: 0 4px;
   position: relative;
   transition: all 0.7s ease-out;
   cursor: pointer;
+  overflow: hidden;
 }
 .apps .app div {
   position: absolute;
 }
 .apps .app .title--cap {
   text-align: center;
+  margin-bottom: 34px;
 }
-.apps .app p {
-  padding: 29px 24px 12px 24px;
+.apps .app__list {
+  list-style: none;
+  padding: 0;
 }
-.apps .app .contentOpen svg {
+.apps .app__list__svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 24px;
+  margin-bottom: -4px;
+  flex: 0 0 30px;
+}
+.apps .app__list li {
+  font-family: "mr-eaves-modern", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 23px;
+  line-height: 29px;
+  color: #202020;
+  padding: 0 48px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.apps .app .contentOpen .app__svg {
   width: 50px;
   height: 50px;
   display: block;
@@ -466,28 +504,39 @@ h4 {
   width: 30px;
   height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: auto;
 }
-.apps .app .contentClosed svg {
+.apps .app .contentClosed .app__svg {
   width: 50px;
   height: 50px;
+  align-self: end;
 }
 .apps .app .contentClosed .title--cap {
-  transform: rotateZ(-90deg);
+  writing-mode: vertical-lr;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%); /* Center the text */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-bottom: 0;
 }
 .apps .app.active {
   flex: 3;
 }
 .apps .app:nth-child(1) {
-  background-color: #D9CDF3;
+  border: 2px solid black;
   height: 90%;
 }
 .apps .app:nth-child(2) {
-  background-color: #E7DBF2;
-  height: 70%;
+  border: 2px solid black;
+  height: 75%;
 }
 .apps .app:nth-child(3) {
-  background-color: #E7DBF2;
-  height: 80%;
+  border: 2px solid black;
+  height: 85%;
 }
 
 .solutions {
@@ -564,7 +613,6 @@ body {
   width: 50%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 .intro__right__desc {
   padding: 24px 72px;
@@ -622,19 +670,19 @@ body {
   flex: 3;
 }
 .intro .pro:nth-child(1) {
-  background-color: #D9CDF3;
+  border: 2px solid black;
   height: 95%;
 }
 .intro .pro:nth-child(2) {
-  background-color: #E7DBF2;
+  border: 2px solid black;
   height: 85%;
 }
 .intro .pro:nth-child(3) {
-  background-color: #E7DBF2;
+  border: 2px solid black;
   height: 85%;
 }
 .intro .pro:nth-child(4) {
-  background-color: #D9CDF3;
+  border: 2px solid black;
   height: 100%;
 }
 

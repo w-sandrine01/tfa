@@ -8,6 +8,7 @@ const pros = document.querySelectorAll('.pro');
 const contents = document.querySelectorAll('.contentOpen');
 const pro1 = document.querySelector('.pro:first-of-type');
 
+
 const apps = document.querySelectorAll('.app');
 const app1 = document.querySelector('.app:first-of-type');
 
@@ -36,6 +37,10 @@ pros.forEach((pro) => {
         pro.querySelector('.contentClosed').style.visibility = "hidden";
     })
 })
+
+
+
+
 
 apps.forEach((app) => {
     app.addEventListener('click',()=>{
