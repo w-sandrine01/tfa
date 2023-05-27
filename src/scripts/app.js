@@ -60,5 +60,69 @@ apps.forEach((app) => {
 
 
 
-// Move with mouse /////////////////////////////////////////////////////////////
 
+
+
+
+// Slideshow ///////////////////////////////////
+
+let widthContent = document.querySelector('.slideshow__content');
+let widthWireframes = document.querySelector('.slideshow__wireframes');
+let number = document.querySelector('.numActive');
+
+    
+let textSlides = document.getElementsByClassName("slide__text");
+let imgSlides = document.getElementsByClassName("wireframe");
+let etape = 0;
+let nbSlide = textSlides.length;
+let prev = document.querySelector(".previous");
+let next = document.querySelector(".next");
+
+
+for(let i = 0; i < nbSlide; i++){
+    textSlides[i].style.width = widthContent.offsetWidth - 144 + "px";
+    imgSlides[i].style.width = widthWireframes.offsetWidth + "px";
+}
+
+
+
+function removeActive(){
+    for(let i = 0; i < nbSlide; i++){        
+        textSlides[i].classList.remove('active');
+        imgSlides[i].classList.remove('active');
+    }
+}
+
+if(next){
+    next.addEventListener('click',function(){
+    etape++;
+    
+    if(etape >= nbSlide){ 
+        etape=0;
+    }
+
+    removeActive();
+
+    textSlides[etape].classList.add('active');
+    imgSlides[etape].classList.add('active');
+    number.textContent = "0" + (etape+1);
+})
+}
+
+if(prev){
+    prev.addEventListener('click', function(){
+    etape--;
+    
+    if(etape < 0){ 
+        etape = nbSlide-1;
+    }
+
+    removeActive();
+
+    textSlides[etape].classList.add('active');
+    imgSlides[etape].classList.add('active');
+    number.textContent = "0" + (etape+1);
+
+
+})
+}

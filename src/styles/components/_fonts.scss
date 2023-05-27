@@ -134,6 +134,16 @@ h4{
 
 // Solutions section ///////////////////////////////////////////
 
-.solutions .title--section{
-    color: #D1C8FF;
+.solutions{
+    .title--section{
+        color: #D1C8FF;
+    }
+
+    .num p, div{
+        font-family: "mr-eaves-xl-sans-narrow", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 47px;
+    }
 }
+
