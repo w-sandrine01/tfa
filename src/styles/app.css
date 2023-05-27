@@ -495,24 +495,46 @@ h4 {
   display: flex;
 }
 .apps .app .contentOpen .app__svg {
-  width: 50px;
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin: 29px auto;
+}
+.apps .app .contentOpen .app__svg--gr {
+  width: 60px;
+  height: 60px;
+}
+.apps .app .contentOpen .app__png {
+  width: 80px;
   height: 50px;
   display: block;
   margin: 29px auto;
 }
 .apps .app .contentClosed {
-  width: 30px;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   margin: auto;
+  margin-top: -20px;
 }
 .apps .app .contentClosed .app__svg {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   align-self: end;
+}
+.apps .app .contentClosed .app__svg--gr {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 12px;
+}
+.apps .app .contentClosed .app__png {
+  width: 100px;
+  height: 70px;
+  align-self: flex-end;
+  margin-bottom: 8px;
 }
 .apps .app .contentClosed .title--cap {
   writing-mode: vertical-lr;
@@ -662,8 +684,8 @@ body {
   margin-top: -29px;
 }
 .intro .pro .contentClosed svg {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   align-self: flex-end;
 }
 .intro .pro .contentClosed .title--cap {
