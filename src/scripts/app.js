@@ -156,3 +156,35 @@ document.addEventListener("mousemove", function move(e){
 
 
 
+
+
+
+// Parallax ///////////////////////////////////
+
+gsap.registerPlugin(ScrollTrigger);
+
+let getRatio = el => window.innerHeight / (window.innerHeight + el.offsetHeight);
+
+gsap.utils.toArray(".container__parallax").forEach((container, i) => {
+  container.bgp = container.querySelector(".bgp"); 
+  
+  gsap.fromTo(container.bgp, {
+
+//     backgroundPosition: () => i ? `50% ${-window.innerHeight * getRatio(section)}px` : "50% -450px"
+// }, {
+
+
+    backgroundPosition: `50% ${-window.innerHeight * getRatio(container)}px`
+  }, {
+    backgroundPosition: `50% ${window.innerHeight * (1 - getRatio(container))}px`,
+    ease: "none",
+    scrollTrigger: {
+      trigger: container,
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true,
+      invalidateOnRefresh: true // to make it responsive
+    }
+  });
+
+});

@@ -178,6 +178,16 @@ h4 {
   height: 100%;
 }
 
+.bgp {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .why {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
@@ -189,7 +199,7 @@ h4 {
   background-color: black;
   border-radius: 200px;
 }
-.why__pic {
+.why .container__parallax {
   grid-column: 1/6;
   border-top: 2px solid black;
   border-right: 2px solid black;
@@ -199,6 +209,14 @@ h4 {
   align-items: center;
   padding: 87px 0;
   background-color: #FCFEA5;
+}
+.why .container__parallax .why__pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/images/readingBed.jpg");
+  width: 65%;
+  height: 100%;
 }
 .why .content1 {
   grid-column: 6/14;
@@ -301,12 +319,22 @@ h4 {
   background-color: black;
   border-radius: 200px;
 }
-.interviews__pic {
+.interviews .container__parallax--interviews {
   border-left: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 87px 0;
+  padding: 87px 87px;
+}
+.interviews .container__parallax--interviews .interviews__pic {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  background-image: url("../assets/images/pcCoffee.jpg");
 }
 .interviews .feedback {
   grid-column: 1/14;
@@ -436,13 +464,21 @@ h4 {
 .interviews .question.q4 .q4__content .q4__ccl p:nth-child(2) {
   margin-top: 29px;
 }
-.interviews .question__pic {
+.interviews .container__parallax--question {
   grid-column: 11/14;
   border-top: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 87px 0;
+  background-color: #FCFEA5;
+}
+.interviews .container__parallax--question .question__pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/images/bookStack.jpg");
+  width: 65%;
+  height: 60%;
 }
 
 .apps {

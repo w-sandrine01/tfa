@@ -1,6 +1,7 @@
 
 
 .interviews{
+    
     .container{
         position: relative;
         width: 100%;
@@ -54,6 +55,11 @@
         border-radius: 100%;
     }
 
+
+
+
+
+
     overflow: hidden;
     position: relative;
     z-index: -2;
@@ -69,13 +75,40 @@
         border-radius: 200px;
     }
 
-    &__pic{
+    
+
+    .container__parallax--interviews{
+        // position: relative;
+        // height: 100vh;
+        // width: 50vw;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // background-color: #FCFEA5; 
+        // border-bottom: 2px solid black;
+        // border-top: 2px solid black;
+
         border-left: 2px solid black;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 87px 0;
+        padding: 87px 87px;
+        
+        .interviews__pic{
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40%;
+            background-image: url('../assets/images/pcCoffee.jpg');
+
+        }
     }
+
+   
 
     .feedback{
         grid-column: 1/14;
@@ -192,7 +225,7 @@
             }
         }    
         
-        
+       
         &.q4{
             border-top: 2px solid black;
             border-bottom: 2px solid black;
@@ -227,21 +260,38 @@
                     }                    
                 }
             }
-        }
-    }
+        }    
+    } 
+    
 
 
-    .question__pic{
+    .container__parallax--question{
         grid-column: 11/14;
         border-top: 2px solid black;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 87px 0;
+        // padding: 87px 0;
+
+        background-color: #FCFEA5;
+
+        
+        .question__pic{
+            // grid-column: 11/14;
+            // border-top: 2px solid black;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // padding: 87px 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('../assets/images/bookStack.jpg');
+            width: 65%;
+            height: 60%;
+        }
     }
-
-
-
 
 }
 
