@@ -29,13 +29,13 @@ body{
     .circle2{
         position: absolute;
         z-index: -1;
-        right: -20px;
-        bottom: -100px;
+        right: 200px;
+        bottom: 100px;
         background-color: transparent;
-        background-image: linear-gradient(#FCFEA5,#f2f3d1 99%);
+        background-image: linear-gradient(#FCFEA5,rgb(216, 218, 176) 99%);
         filter: blur(60px);
-        width: 60vw;
-        height: 40vw;
+        width: 50vw;
+        height: 30vw;
         border-radius: 100%;
     }
 

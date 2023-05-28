@@ -1,12 +1,16 @@
 
 
 .interviews{
+    .container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
     .circle3{
         position: absolute;
         z-index: -1;
         left: -200px;
         top: 300px;        
-        background-color: transparent;
         background-image: linear-gradient(#ceb8ff,#f2e5ff 99%);
         filter: blur(60px);
         width: 65vw;
@@ -19,7 +23,7 @@
         right: 200px;
         top: 800px;
         background-color: transparent;
-        background-image: linear-gradient(#FCFEA5,#f2f3d1 99%);
+        background-image: linear-gradient(#FCFEA5,rgb(216, 218, 176) 99%);
         filter: blur(60px);
         width: 40vw;
         height: 30vw;
@@ -43,10 +47,10 @@
         right: -50px;
         bottom: 50px;
         background-color: transparent;
-        background-image: linear-gradient(#FCFEA5,#f2f3d1 99%);
+        background-image: linear-gradient(#FCFEA5,rgb(216, 218, 176) 99%);
         filter: blur(60px);
-        width: 60vw;
-        height: 60vw;
+        width: 50vw;
+        height: 50vw;
         border-radius: 100%;
     }
 
@@ -102,6 +106,7 @@
         
         .rep{
             background-color: #D9CDF3;
+            border: 1px solid #202020;
             border-radius: 40px;
             padding: 24px 48px;
             width: fit-content;

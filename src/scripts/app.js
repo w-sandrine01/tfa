@@ -126,3 +126,33 @@ if(prev){
 
 })
 }
+
+
+
+
+
+
+
+
+// Move with mouse ///////////////////////////////////
+
+let container = document.querySelector('.interviews');
+let objects = document.querySelectorAll('.object');
+
+document.addEventListener("mousemove", function move(e){
+    let X = e.clientX;
+    let Y = e.clientY;
+  
+    objects[0].style.transform = "translate(" + X/10 + "px, "+ Y/5 + "px)";
+    objects[1].style.transform = "translate(" + X/2 + "px, "+ Y/7 + "px)";
+
+    objects[2].style.transform = "translate(" + X/5 + "px, "+ Y/5 + "px)";
+    objects[3].style.transform = "translate(" + X/7 + "px, "+ Y/2 + "px)";
+    objects[4].style.transform = "translate(" + X/4 + "px, "+ Y/7 + "px)";
+    objects[5].style.transform = "translate(" + X/9 + "px, "+ Y/9 + "px)";
+  }
+);
+
+
+
+
