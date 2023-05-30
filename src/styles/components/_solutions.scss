@@ -15,7 +15,6 @@
         display: grid;
         grid-template-columns: repeat(13, 1fr);
 
-
         &__page{
             background-color: #D1C8FF;
             border-right: 2px solid black;
@@ -47,7 +46,7 @@
             .num{
                 display: flex;
                 justify-content: center;
-                margin: 58px 0;
+                margin: 58px 0 116px 0;
 
                 p{
                     margin-top: 10px;
@@ -60,7 +59,7 @@
         &__content{
             border-right: 2px solid black;
             grid-column: 3/10;
-            padding: 0 72px 58px 72px;
+            padding: 116px 72px 116px 72px;
             display: flex;
             align-items: flex-end;
 
@@ -91,6 +90,9 @@
                     li{
                         display: flex;
                         margin-bottom: 29px; 
+                        &:last-child{
+                            margin-bottom: 0;
+                        } 
 
                         &::before{
                             content: counter(my-counter);
@@ -114,7 +116,6 @@
             .wireframe{
                 position: absolute;
                 visibility: hidden;
-                // width: calc(100vw / 13 * 4);
 
                 &.active{
                     visibility: visible;
@@ -124,3 +125,23 @@
     }
 }
 
+
+
+.bounce:hover {
+    animation: bounce 1.2s infinite;
+}
+  
+@keyframes bounce {
+    0%, 20%, 50%, 75%, 100% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(8px);
+    }
+    50% {
+        transform: translateX(-2px);
+    }
+    75% {
+        transform: translateX(4px);
+    }
+}

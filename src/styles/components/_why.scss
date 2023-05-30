@@ -44,9 +44,9 @@
             // background-color: #FCFEA5;
 
             // grid-column: 1/6;
-            // // border-top: 2px solid black;
-            // // border-right: 2px solid black;
-            // // border-bottom: 2px solid black;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
 
             display: flex;
             justify-content: center;
@@ -66,7 +66,7 @@
         padding: 116px 72px;
 
         h3{
-            padding-bottom: 58px;
+            margin-bottom: 58px;
         }
         p:first-of-type{
             margin-bottom: 29px;
@@ -100,6 +100,14 @@
 
 
 }
+
+
+
+
+
+
+
+
 
 
 

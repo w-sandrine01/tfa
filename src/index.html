@@ -32,10 +32,16 @@
         <h1>
         <span>
           <span class="title--big">Book</span>
-          <img class="imgShelf" src="assets/images/shelf.jpg" alt="Dozen of books on a shelf">
+          <span class="container__parallax">
+              <div class="imgShelf bgp"></div>
+          </span>
+          <!-- <img class="imgShelf" src="assets/images/shelf.jpg" alt="Dozen of books on a shelf"> -->
         </span>
         <span>
-          <img class="imgMeeting" src="assets/images/meeting.jpg" alt="A group of people talking and sitting around tables in a cafe">
+          <span class="container__parallax">
+            <!-- <img class="imgMeeting" src="assets/images/meeting.jpg" alt="A group of people talking and sitting around tables in a cafe"> -->
+            <div class="imgMeeting bgp"></div>
+          </span>
           <span class="title--big--italic">Hive</span>  
         </span>
       </h1>
@@ -107,7 +113,10 @@
 
           <div class="pro">
             <div class="contentOpen">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path  d="M58.72 18.2a2 2 0 0 0-1-1.65L33 2.27a2 2 0 0 0-2 0L6.27 16.55a2 2 0 0 0-1 1.73v27.44a2 2 0 0 0 1 1.73L31 61.73a2.06 2.06 0 0 0 2 0l24.73-14.28a2 2 0 0 0 1-1.73c-.01-.08.02-27.45-.01-27.52ZM32 6.31l20.73 12L32 30.25l-20.73-12ZM9.27 21.74 30 33.71v22.83l-20.73-12ZM34 56.54V33.71l20.73-12v22.86Z" data-name="Layer 95"/></svg>
+              <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-width="1.1" d="M12 5C6.55576 5 3.53109 9.23425 2.45554 11.1164C2.23488 11.5025 2.12456 11.6956 2.1367 11.9836C2.14885 12.2716 2.27857 12.4598 2.53799 12.8362C3.8182 14.6935 7.29389 19 12 19C16.7061 19 20.1818 14.6935 21.462 12.8362C21.7214 12.4598 21.8511 12.2716 21.8633 11.9836C21.8754 11.6956 21.7651 11.5025 21.5445 11.1164C20.4689 9.23425 17.4442 5 12 5Z" stroke="#222222"/>
+                <circle cx="12" cy="12" r="3" stroke="#222222"/>
+              </svg>              
               <h2 class="title--cap">New perspectives</h2> 
               <p>
                 Two heads are better than one. You might be surprised at the new ideas and fresh angles 
@@ -119,7 +128,8 @@
               <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-width="1.1" d="M12 5C6.55576 5 3.53109 9.23425 2.45554 11.1164C2.23488 11.5025 2.12456 11.6956 2.1367 11.9836C2.14885 12.2716 2.27857 12.4598 2.53799 12.8362C3.8182 14.6935 7.29389 19 12 19C16.7061 19 20.1818 14.6935 21.462 12.8362C21.7214 12.4598 21.8511 12.2716 21.8633 11.9836C21.8754 11.6956 21.7651 11.5025 21.5445 11.1164C20.4689 9.23425 17.4442 5 12 5Z" stroke="#222222"/>
                 <circle cx="12" cy="12" r="3" stroke="#222222"/>
-                </svg>              <h2 class="title--cap">New perspectives</h2> 
+              </svg>              
+              <h2 class="title--cap">New perspectives</h2> 
             </div>
           </div>
 
@@ -177,7 +187,7 @@
 
 
     
-    <div class="container__parallax">
+    <div class="container__parallax container__parallax--why">
       <div class="why__pic bgp">
         <!-- <img class="imgBed" src="assets/images/readingBed.jpg" alt=""> -->
       </div>
@@ -190,8 +200,10 @@
 
 
     <div class="content1">
-      <h3> 
-        As a bookworm myself, I wish I knew someone equally as interested as me in the books I read.
+      <h3>
+        <a class="underline"> 
+          As a bookworm myself, I wish I knew someone equally as interested as me in the books I read.
+        </a>
       </h3>
        <p>
         Just like with good TV series, when a good book comes to an end, or even during it, you naturally want to share your 
@@ -210,7 +222,7 @@
     <div class="content2">
       <div>
         <h3> 
-          Suggestions are a bit all over the place !
+          <a class="underline">Suggestions are a bit all over the place !</a>
         </h3>
         <p>
           After doing some research online and talking to members of the reading community, I’ve 
@@ -224,7 +236,7 @@
         
       <div>
         <h3> 
-          In short, there is room for improvement ! 
+          <a class="underline"> In short, there is room for improvement !</a>
         </h3>
         <p>
           The main difficulties that people have are being in a different time zone, falling 
@@ -268,7 +280,7 @@
 
       <div>
         <h3> 
-          The best place to get feedback is directly from the users.
+          <a class="underline">The best place to get feedback is directly from the users.</a>
         </h3>
         <p>
           I asked within my social circle who enjoys reading and if they knew other people who 
@@ -290,14 +302,14 @@
     </div>
 
 
-    <div class="question q1">
+    <div class="question q1 container--q1">
       <h4>How often do you read ?</h4>
 
       <div class="q1__content">
         <div>
-          <p class="rep">“I read just about every day. I play audiobooks roughly 6-8 hours a day while I work.”</p>
-          <p class="rep">“I try to read at least 20-30 minutes everyday”</p>
-          <p class="rep">“J'essaye de lire une bonne heure au moins 2 fois par semaine quand je suis plus libre !”
+          <p class="rep drag drag--q1">&ldquo;&nbsp;I read just about every day. I play audiobooks roughly 6-8 hours a day while I work.&nbsp;&rdquo;</p>
+          <p class="rep drag drag--q1">&ldquo;&nbsp;I try to read at least 20-30 minutes everyday.&nbsp;&rdquo;</p>
+          <p class="rep drag drag--q1">&ldquo;&nbsp;J'essaye de lire une bonne heure au moins 2 fois par semaine quand je suis plus libre !&nbsp;&rdquo;</p>
         </div>
 
         <p>
@@ -312,17 +324,17 @@
 
 
 
-    <div class="question q2">
+    <div class="question q2 container--q2">
       <h4>Would you be interested in meeting other readers or participating in a book club ?</h4>
 
       <div class="q2__content">
         <div>
-          <p class="rep">
-            “Ça pourrait être cool ne serait-ce que pour être motivé à lire plus souvent”
+          <p class="rep drag drag--q2">
+            &ldquo;&nbsp;Ça pourrait être cool ne serait-ce que pour être motivé à lire plus souvent&nbsp;&rdquo;
           </p>
-          <p class="rep">
-            “Probably not unless I get into reading a lot more. Maybe I would because I've 
-            never done it before so just to try something new but I wouldn't do it alone, I'd do it with a friend.” 
+          <p class="rep drag drag--q2">
+            &ldquo;&nbsp;Probably not unless I get into reading a lot more. Maybe I would because I've 
+            never done it before so just to try something new but I wouldn't do it alone, I'd do it with a friend.&nbsp;&rdquo; 
           </p>
         </div>
 
@@ -338,7 +350,7 @@
 
 
 
-    <div class="question q3">
+    <div class="question q3 container--q3">
       <h4>Do you have friends or family with whom you can discuss books with ?</h4>
 
       <div class="q3__content">
@@ -350,10 +362,10 @@
         </p>
 
         <div>
-          <p class="rep">  
-            “Sometimes I recommend books to others, some read them but don't really talk about it with me. A week ago 
+          <p class="rep drag--q3">  
+            &ldquo;&nbsp;Sometimes I recommend books to others, some read them but don't really talk about it with me. A week ago 
             I read a book that I got from a friend who had read it. I said what I thought of it but the only response 
-            I got was “I'm glad you enjoyed the book" so I couldn't really discuss it.”
+            I got was “I'm glad you enjoyed the book" so I couldn't really discuss it.&nbsp;&rdquo;
           </p>
         </div>
       </div>
@@ -367,23 +379,25 @@
     </div>
 
 
-    <div class="question q4">
+
+
+
+    <div class="question q4 container--q4">
       <h4>Would you be interested in meeting readers with similar tastes and reading goals as you ?</h4>
 
       <div class="q4__content">
         <div>
-          <p class="rep">  
-            “J’ai parfois l’impression que les sous textes des livres que je lis m’échappent et c’est assez frustrant. 
-            Si quelqu’un pouvait compléter mon raisonnement ce serait idéal” 
+          <p class="rep drag--q4">  
+            &ldquo;&nbsp;J’ai parfois l’impression que les sous textes des livres que je lis m’échappent et c’est assez frustrant. 
+            Si quelqu’un pouvait compléter mon raisonnement ce serait idéal.&nbsp;&rdquo; 
           </p>
-          <p class="rep">  
-            “Ça permet de remettre en question notre interprétation, et puis c'est aussi très chouette de pouvoir 
-            partager son point de vue avec quelqu'un qui est intéressé et qui comprend de quoi on parle” 
-
+          <p class="rep drag--q4">  
+            &ldquo;&nbsp;Ça permet de remettre en question notre interprétation, et puis c'est aussi très chouette de pouvoir 
+            partager son point de vue avec quelqu'un qui est intéressé et qui comprend de quoi on parle.&nbsp;&rdquo; 
           </p>
-          <p class="rep">  
-            “I definitely would love finding a community of people where people can share their love for books and 
-            such.” 
+          <p class="rep drag--q4">  
+            &ldquo;&nbsp;I definitely would love finding a community of people where people can share their love for books and 
+            such.&nbsp;&rdquo; 
           </p>
         </div>
 
@@ -422,7 +436,8 @@
 
           <div class="app active">
             <div class="contentOpen">              
-              <svg class="app__svg app__svg--gr" version="1.1" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><defs/><g fill="none" fill-rule="evenodd" id="black" stroke="none" stroke-width="1"><g id="goodreads"><path d="M30,60 C46.5685433,60 60,46.5685433 60,30 C60,13.4314567 46.5685433,0 30,0 C13.4314567,0 0,13.4314567 0,30 C0,46.5685433 13.4314567,60 30,60 Z" fill="#000000" id="goodread"/><path d="M29.8990615,37.0028068 C33.9449077,36.9716533 36.8218615,35.0982126 38.5286769,31.3821 L38.6184,31.3821 L38.6184,37.0493448 C38.6184,37.4716478 38.5884923,38.1266405 38.5286769,39.0166306 C38.4069692,39.9381588 38.0821385,40.9293016 37.5546,41.9912129 C37.0258154,42.9904326 36.1722,43.841577 34.9954154,44.5438769 C33.8319231,45.309253 32.2086,45.7069409 30.1246154,45.738479 C28.1162308,45.738479 26.4181385,45.2542536 25.0282615,44.2861874 C23.6080615,43.3338903 22.7777077,41.7877536 22.5372,39.6493159 L20.7705692,39.6493159 C20.9516769,42.4281311 21.9095538,44.411186 23.6462769,45.5977113 C25.3368923,46.7369294 27.4815231,47.3076923 30.0793385,47.3076923 C32.646,47.3076923 34.6473231,46.8626973 36.0816462,45.9723225 C37.5006,45.1138705 38.5191231,44.0438824 39.1392923,42.7638966 C39.7582154,41.4835263 40.1279077,40.2654629 40.2483692,39.1104757 C40.3397538,37.9551039 40.3846154,37.1278054 40.3846154,36.627811 L40.3846154,13.2546091 L38.6175692,13.2546091 L38.6175692,18.4068596 L38.5278462,18.4068596 C37.8482769,16.5180344 36.7234154,15.0895887 35.1524308,14.121138 C33.5673231,13.1688409 31.8152308,12.6923077 29.8982308,12.6923077 C26.5597846,12.7549993 24.0234462,13.9492168 22.2879692,16.2757294 C20.5055538,18.5860884 19.6153846,21.4360567 19.6153846,24.824096 C19.6153846,28.3059804 20.4602769,31.186333 22.1513077,33.465923 C23.8593692,35.7932049 26.4405692,36.9720379 29.8990615,37.0028068 L29.8990615,37.0028068 Z M23.5116923,17.5411 C24.8999077,15.4330465 27.0291692,14.3403663 29.8990615,14.2622902 C32.8433077,14.3407509 35.0244923,15.4022776 36.4446923,17.4476395 C37.8636462,19.493386 38.5739538,21.9522048 38.5739538,24.8252498 C38.5739538,27.6982948 37.8636462,30.1413446 36.4446923,32.155553 C35.0244923,34.29476 32.8433077,35.3874401 29.8990615,35.4339781 C27.1205538,35.3870555 25.0058308,34.3255289 23.5565538,32.2490135 C22.0914923,30.2351897 21.3595846,27.7602172 21.3595846,24.8252498 C21.3595846,22.0768188 22.0769538,19.6487689 23.5116923,17.5411 L23.5116923,17.5411 Z" fill="#FFFFFF"/></g></g></svg>              <h2 class="title--cap">Goodreads</h2> 
+              <svg class="app__svg app__svg--gr" version="1.1" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><defs/><g fill="none" fill-rule="evenodd" id="black" stroke="none" stroke-width="1"><g id="goodreads"><path d="M30,60 C46.5685433,60 60,46.5685433 60,30 C60,13.4314567 46.5685433,0 30,0 C13.4314567,0 0,13.4314567 0,30 C0,46.5685433 13.4314567,60 30,60 Z" fill="#000000" id="goodread"/><path d="M29.8990615,37.0028068 C33.9449077,36.9716533 36.8218615,35.0982126 38.5286769,31.3821 L38.6184,31.3821 L38.6184,37.0493448 C38.6184,37.4716478 38.5884923,38.1266405 38.5286769,39.0166306 C38.4069692,39.9381588 38.0821385,40.9293016 37.5546,41.9912129 C37.0258154,42.9904326 36.1722,43.841577 34.9954154,44.5438769 C33.8319231,45.309253 32.2086,45.7069409 30.1246154,45.738479 C28.1162308,45.738479 26.4181385,45.2542536 25.0282615,44.2861874 C23.6080615,43.3338903 22.7777077,41.7877536 22.5372,39.6493159 L20.7705692,39.6493159 C20.9516769,42.4281311 21.9095538,44.411186 23.6462769,45.5977113 C25.3368923,46.7369294 27.4815231,47.3076923 30.0793385,47.3076923 C32.646,47.3076923 34.6473231,46.8626973 36.0816462,45.9723225 C37.5006,45.1138705 38.5191231,44.0438824 39.1392923,42.7638966 C39.7582154,41.4835263 40.1279077,40.2654629 40.2483692,39.1104757 C40.3397538,37.9551039 40.3846154,37.1278054 40.3846154,36.627811 L40.3846154,13.2546091 L38.6175692,13.2546091 L38.6175692,18.4068596 L38.5278462,18.4068596 C37.8482769,16.5180344 36.7234154,15.0895887 35.1524308,14.121138 C33.5673231,13.1688409 31.8152308,12.6923077 29.8982308,12.6923077 C26.5597846,12.7549993 24.0234462,13.9492168 22.2879692,16.2757294 C20.5055538,18.5860884 19.6153846,21.4360567 19.6153846,24.824096 C19.6153846,28.3059804 20.4602769,31.186333 22.1513077,33.465923 C23.8593692,35.7932049 26.4405692,36.9720379 29.8990615,37.0028068 L29.8990615,37.0028068 Z M23.5116923,17.5411 C24.8999077,15.4330465 27.0291692,14.3403663 29.8990615,14.2622902 C32.8433077,14.3407509 35.0244923,15.4022776 36.4446923,17.4476395 C37.8636462,19.493386 38.5739538,21.9522048 38.5739538,24.8252498 C38.5739538,27.6982948 37.8636462,30.1413446 36.4446923,32.155553 C35.0244923,34.29476 32.8433077,35.3874401 29.8990615,35.4339781 C27.1205538,35.3870555 25.0058308,34.3255289 23.5565538,32.2490135 C22.0914923,30.2351897 21.3595846,27.7602172 21.3595846,24.8252498 C21.3595846,22.0768188 22.0769538,19.6487689 23.5116923,17.5411 L23.5116923,17.5411 Z" fill="#FFFFFF"/></g></g></svg>              
+              <h2 class="title--cap">Goodreads</h2> 
 
                 <ul class="app__list">
                   <li>
@@ -461,7 +476,7 @@
             </div>
 
             <div class="contentClosed">              
-              <svg class="app__svg app__svg--gr" version="1.1" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><defs/><g fill="none" fill-rule="evenodd" id="black" stroke="none" stroke-width="1"><g id="goodreads"><path d="M30,60 C46.5685433,60 60,46.5685433 60,30 C60,13.4314567 46.5685433,0 30,0 C13.4314567,0 0,13.4314567 0,30 C0,46.5685433 13.4314567,60 30,60 Z" fill="#000000" id="goodread"/><path d="M29.8990615,37.0028068 C33.9449077,36.9716533 36.8218615,35.0982126 38.5286769,31.3821 L38.6184,31.3821 L38.6184,37.0493448 C38.6184,37.4716478 38.5884923,38.1266405 38.5286769,39.0166306 C38.4069692,39.9381588 38.0821385,40.9293016 37.5546,41.9912129 C37.0258154,42.9904326 36.1722,43.841577 34.9954154,44.5438769 C33.8319231,45.309253 32.2086,45.7069409 30.1246154,45.738479 C28.1162308,45.738479 26.4181385,45.2542536 25.0282615,44.2861874 C23.6080615,43.3338903 22.7777077,41.7877536 22.5372,39.6493159 L20.7705692,39.6493159 C20.9516769,42.4281311 21.9095538,44.411186 23.6462769,45.5977113 C25.3368923,46.7369294 27.4815231,47.3076923 30.0793385,47.3076923 C32.646,47.3076923 34.6473231,46.8626973 36.0816462,45.9723225 C37.5006,45.1138705 38.5191231,44.0438824 39.1392923,42.7638966 C39.7582154,41.4835263 40.1279077,40.2654629 40.2483692,39.1104757 C40.3397538,37.9551039 40.3846154,37.1278054 40.3846154,36.627811 L40.3846154,13.2546091 L38.6175692,13.2546091 L38.6175692,18.4068596 L38.5278462,18.4068596 C37.8482769,16.5180344 36.7234154,15.0895887 35.1524308,14.121138 C33.5673231,13.1688409 31.8152308,12.6923077 29.8982308,12.6923077 C26.5597846,12.7549993 24.0234462,13.9492168 22.2879692,16.2757294 C20.5055538,18.5860884 19.6153846,21.4360567 19.6153846,24.824096 C19.6153846,28.3059804 20.4602769,31.186333 22.1513077,33.465923 C23.8593692,35.7932049 26.4405692,36.9720379 29.8990615,37.0028068 L29.8990615,37.0028068 Z M23.5116923,17.5411 C24.8999077,15.4330465 27.0291692,14.3403663 29.8990615,14.2622902 C32.8433077,14.3407509 35.0244923,15.4022776 36.4446923,17.4476395 C37.8636462,19.493386 38.5739538,21.9522048 38.5739538,24.8252498 C38.5739538,27.6982948 37.8636462,30.1413446 36.4446923,32.155553 C35.0244923,34.29476 32.8433077,35.3874401 29.8990615,35.4339781 C27.1205538,35.3870555 25.0058308,34.3255289 23.5565538,32.2490135 C22.0914923,30.2351897 21.3595846,27.7602172 21.3595846,24.8252498 C21.3595846,22.0768188 22.0769538,19.6487689 23.5116923,17.5411 L23.5116923,17.5411 Z" fill="#FFFFFF"/></g></g></svg>              <h2 class="title--cap">Goodreads</h2> 
+              <svg class="app__svg app__svg--gr" version="1.1" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><defs/><g fill="none" fill-rule="evenodd" id="black" stroke="none" stroke-width="1"><g id="goodreads"><path d="M30,60 C46.5685433,60 60,46.5685433 60,30 C60,13.4314567 46.5685433,0 30,0 C13.4314567,0 0,13.4314567 0,30 C0,46.5685433 13.4314567,60 30,60 Z" fill="#000000" id="goodread"/><path d="M29.8990615,37.0028068 C33.9449077,36.9716533 36.8218615,35.0982126 38.5286769,31.3821 L38.6184,31.3821 L38.6184,37.0493448 C38.6184,37.4716478 38.5884923,38.1266405 38.5286769,39.0166306 C38.4069692,39.9381588 38.0821385,40.9293016 37.5546,41.9912129 C37.0258154,42.9904326 36.1722,43.841577 34.9954154,44.5438769 C33.8319231,45.309253 32.2086,45.7069409 30.1246154,45.738479 C28.1162308,45.738479 26.4181385,45.2542536 25.0282615,44.2861874 C23.6080615,43.3338903 22.7777077,41.7877536 22.5372,39.6493159 L20.7705692,39.6493159 C20.9516769,42.4281311 21.9095538,44.411186 23.6462769,45.5977113 C25.3368923,46.7369294 27.4815231,47.3076923 30.0793385,47.3076923 C32.646,47.3076923 34.6473231,46.8626973 36.0816462,45.9723225 C37.5006,45.1138705 38.5191231,44.0438824 39.1392923,42.7638966 C39.7582154,41.4835263 40.1279077,40.2654629 40.2483692,39.1104757 C40.3397538,37.9551039 40.3846154,37.1278054 40.3846154,36.627811 L40.3846154,13.2546091 L38.6175692,13.2546091 L38.6175692,18.4068596 L38.5278462,18.4068596 C37.8482769,16.5180344 36.7234154,15.0895887 35.1524308,14.121138 C33.5673231,13.1688409 31.8152308,12.6923077 29.8982308,12.6923077 C26.5597846,12.7549993 24.0234462,13.9492168 22.2879692,16.2757294 C20.5055538,18.5860884 19.6153846,21.4360567 19.6153846,24.824096 C19.6153846,28.3059804 20.4602769,31.186333 22.1513077,33.465923 C23.8593692,35.7932049 26.4405692,36.9720379 29.8990615,37.0028068 L29.8990615,37.0028068 Z M23.5116923,17.5411 C24.8999077,15.4330465 27.0291692,14.3403663 29.8990615,14.2622902 C32.8433077,14.3407509 35.0244923,15.4022776 36.4446923,17.4476395 C37.8636462,19.493386 38.5739538,21.9522048 38.5739538,24.8252498 C38.5739538,27.6982948 37.8636462,30.1413446 36.4446923,32.155553 C35.0244923,34.29476 32.8433077,35.3874401 29.8990615,35.4339781 C27.1205538,35.3870555 25.0058308,34.3255289 23.5565538,32.2490135 C22.0914923,30.2351897 21.3595846,27.7602172 21.3595846,24.8252498 C21.3595846,22.0768188 22.0769538,19.6487689 23.5116923,17.5411 L23.5116923,17.5411 Z" fill="#FFFFFF"/></g></g></svg>              
               <h2 class="title--cap">Goodreads</h2> 
             </div>
           </div>
@@ -583,14 +598,14 @@
 
         <div class="arrows">
           <button class="next">
-            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="bounce" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.4301 5.92993L20.5001 11.9999L14.4301 18.0699" stroke="#292D32" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M3.5 12H20.33" stroke="#292D32" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button>
 
           <button class="previous">
-            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="bounce" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.57 5.92993L3.5 11.9999L9.57 18.0699" stroke="#292D32" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M20.5 12H3.67004" stroke="#292D32" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>          
@@ -609,7 +624,9 @@
 
       <div class="slideshow__content">
         <div class="slide__text active">
-          <h3>The problem with most apps is that after a while their book suggestions lack variety.</h3>
+          <h3>
+            <a class="underline">The problem with most apps is that after a while their book suggestions lack variety.</a>
+            </h3>
           <p>
             That’s why recommendations on BookHive won’t come from an algorithm or a limited pool of books, 
             they will come from the users themselves. They can help each other discover hidden gems that 
@@ -619,7 +636,9 @@
         </div>
 
         <div class="slide__text">
-          <h3>Let’s start with the communication method.</h3>
+          <h3>
+            <a class="underline">Let’s start with the communication method.</a>
+          </h3>
           <p>
             It’s fairly obvious that there should be a private message function to allow a more personal 
             exchange but my interviewees have also expressed a want for a bigger form of exchange such as 
@@ -628,7 +647,9 @@
         </div>
 
         <div class="slide__text">
-          <h3>Scanning through a list can be pretty boring so how can we make finding the perfect reading buddy more fun ?</h3>
+          <h3>
+            <a class="underline">Scanning through a list can be pretty boring so how can we make finding the perfect reading buddy more fun ?</a>
+          </h3>
           <ol>
             <li>
               <p> A swipe or match system is more engaging and provides a gamified experience.</p>
@@ -640,7 +661,9 @@
         </div>
 
         <div class="slide__text">
-          <h3>We can’t have a social platform without personalized profiles !</h3>
+          <h3>
+            <a class="underline">We can’t have a social platform without personalized profiles !</a>
+            </h3>
           <p>
             This will allow users to get an insight on a potential reading buddy. It will contain all the basic personal information but also their reading preferences (favorite 
             authors/genres/quotes, reading speed, turn offs,  TBR list, currently reading list, have read list, current buddy reads, friends count and mutual friends) and 
@@ -649,7 +672,9 @@
         </div>
 
         <div class="slide__text">
-          <h3>Or without a feed.</h3>
+          <h3>
+            <a class="underline">Or without a feed.</a>
+          </h3>
           <p>
             A feed on a social app is an important feature to stay updated on the latest activities of friends and the community but also to engage with others. This can also help 
             to discover new content through friends activities and can offer a space where to share your opinions.
@@ -657,7 +682,9 @@
         </div>
 
         <div class="slide__text">
-          <h3>You’ve found a great reading buddy, what now?</h3>
+          <h3>
+            <a class="underline">You’ve found a great reading buddy, what now?</a>
+          </h3>
           <p>
             Users can create a buddy read and invite others to join, it will automatically be added to the ongoing buddy reads list of each member. It’s more exciting to share 
             your thoughts on a plot twist as it’s happening instead of waiting until the end of the book so reading buddies will be able to comment as they read. With an option 
@@ -666,7 +693,6 @@
         </div>
 
       </div>
-
 
 
 
