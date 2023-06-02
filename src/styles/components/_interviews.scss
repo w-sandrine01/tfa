@@ -116,6 +116,7 @@
 
         div{
             flex: 1;
+            transition-delay: 1.8s;
             
             &:first-of-type{
                 padding: 116px 72px;
@@ -129,187 +130,6 @@
             margin-bottom: 29px;
         }
     }
-
-
-    // .question{
-    //     grid-column: 1/14;
-    //     padding: 116px 72px;
-    //     position: relative;
-    //     z-index: 1;
-        
-    //     .rep{
-    //         background-color: #D9CDF3;
-    //         border: 1px solid #202020;
-    //         border-radius: 40px;
-    //         padding: 24px 48px;
-    //         width: fit-content;
-    //         max-width: 350px;
-    //         min-width: 250px;
-    //     }
-
-    //     &.q1{
-    //         border-bottom: 2px solid black;
-            
-    //         .q1__content{
-    //             display: flex;
-    //             justify-content: space-between;
-    //             column-gap: 48px;
-                    
-    //             .rep:nth-child(1){
-    //                 margin-left: 150px;
-    //             }
-    //             .rep:nth-child(2){
-    //                 margin-top: 29px;
-    //                 background-color: #E7DBF2;
-    //             }
-    //             .rep:nth-child(3){
-    //                 margin-left: 250px;
-    //                 margin-top: -20px;
-    //             }
-
-    //             & > p{
-    //                     max-width: 400px;
-    //                     display: flex;
-    //                     align-items: center;
-    //                 }
-    //         } 
-    //     }
-        
-        
-    //     &.q2{            
-    //         grid-column: 3/14;
-    //         border-left: 2px solid black;
-            
-    //         .q2__content{   
-    //             .rep:nth-child(1){
-    //                 margin: auto;              
-    //                 background-color: #E7DBF2;
-    //             }
-    //             .rep:nth-child(2){
-    //                 margin-top: -29px;
-    //                 float: right;
-    //             }
-
-    //             & > p{
-    //                     max-width: 400px;
-    //                     margin-top: 87px;
-    //                 }
-    //         }
-    //     }
-
-        
-    //     &.q3{
-    //         grid-column: 1/11;
-    //         border-top: 2px solid black;
-    //         border-right: 2px solid black;
-
-    //         h4{
-    //             max-width: 500px;
-    //             min-width: 400px;
-    //         }
-
-    //         .q3__content{
-    //             display: flex;
-    //             column-gap: 48px;
-    //             justify-content: space-between;
-        
-    //             & > p{
-    //                 width: 500px;
-    //                 min-width: 350px;
-    //             }
-
-    //             .rep{ 
-    //                 min-width: 200px;
-    //                 margin-top: -30px;
-    //             }
-    //         }
-    //     }    
-        
-       
-    //     &.q4{
-    //         border-top: 2px solid black;
-    //         border-bottom: 2px solid black;
-
-    //         .q4__content{
-    //             display: flex;
-    //             column-gap: 96px;
-    //             justify-content: space-between;
-
-    //             div:first-child{
-    //                 width: 100%;
-    //             }
-
-    //             .rep:nth-child(2){
-    //                 margin: auto;
-    //                 margin-top: -20px; 
-    //                 margin-right: 0;                                  
-    //                 background-color: #E7DBF2;                    
-    //                 position: relative; 
-    //                 z-index: 1;
-    //             }
-    //             .rep:nth-child(3){
-    //                 margin-left: 50px;
-    //                 margin-top: -12px;  
-    //             }
-    //             .q4__ccl{
-    //                 max-width: 400px;        
-    //                 align-self: center;
-
-    //                 p:nth-child(2){
-    //                     margin-top: 29px;  
-    //                 }                    
-    //             }
-    //         }
-    //     }    
-    // } 
-    
-
-
-    // .container__parallax--question{
-    //     grid-column: 11/14;
-    //     border-top: 2px solid black;
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     // padding: 87px 0;
-
-    //     background-color: #FCFEA5;
-
-        
-    //     .question__pic{
-    //         // grid-column: 11/14;
-    //         // border-top: 2px solid black;
-    //         // display: flex;
-    //         // justify-content: center;
-    //         // align-items: center;
-    //         // padding: 87px 0;
-
-    //         display: flex;
-    //         justify-content: center;
-    //         align-items: center;
-    //         background-image: url('../assets/images/bookStack.jpg');
-    //         width: 65%;
-    //         height: 60%;
-    //     }
-    // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -341,23 +161,27 @@
                 column-gap: 48px;
                     
                 .rep:nth-child(1){
-
+                    transition-delay: 3.6s;
                 }
                 .rep:nth-child(2){
                     left: 12vw;
                     top: 17vw;
                     background-color: #E7DBF2;
+                    transition-delay: 3.8s;
                 }
                 .rep:nth-child(3){
                     left: 18vw;
                     top: 19vw;
+                    transition-delay: 4s;
                 }
 
                 & > p{
                         max-width: 400px;
                         display: flex;
                         align-items: center;
+                        transition-delay: 4.2s;
                     }
+                
             } 
         }
         
@@ -372,13 +196,16 @@
                     right: 22vw;            
                     background-color: #E7DBF2;
                     z-index: 1;
+                    transition-delay: 4.2s;
                 }
                 .rep:nth-child(2){
-                    right: 10vw;            
+                    right: 10vw;  
+                    transition-delay: 4.4s;          
                 }
 
                 & > p{
                         max-width: 400px;
+                        transition-delay: 4.6s;          
                     }
             }
         }
@@ -401,11 +228,13 @@
         
                 & > p{
                     width: 500px;
+                    transition-delay: 4.2s;          
                 }
 
                 .rep{ 
                     right: 8vw;            
                     top: 10vw;
+                    transition-delay: 4s;
                 }
             }
         }   
@@ -423,19 +252,22 @@
                 div:first-child{
                     width: 100%;
                 }
-
+                .rep:nth-child(1){  transition-delay: 4.6s;}
                 .rep:nth-child(2){
                     background-color: #E7DBF2;    
                     left: 12vw;            
                     top: 20vw;
+                    transition-delay: 4.8s;
                 }
                 .rep:nth-child(3){
                     left: 18vw;            
                     top: 24vw; 
+                    transition-delay: 5s;
                 }
                 .q4__ccl{
                     max-width: 400px;        
                     align-self: center;
+                    transition-delay: 5.2s;
 
                     p:nth-child(2){
                         margin-top: 29px;  

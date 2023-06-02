@@ -66,8 +66,10 @@
         padding: 116px 72px;
 
         h3{
-            margin-bottom: 58px;
+            margin-bottom: 58px;        
+            transition-delay: 1.8s;
         }
+        p{  transition-delay: 1.8s;}
         p:first-of-type{
             margin-bottom: 29px;
         }
@@ -80,6 +82,7 @@
         column-gap: 72px;
         border-right: 2px solid black;
 
+
         div{
             flex: 1;
             
@@ -89,13 +92,16 @@
             p:first-of-type{
                 margin-bottom: 29px;
             }
+
+            &:nth-child(2){
+                transition-delay: 0.2s;
+            }
         }
     }
 
     .bg{
             grid-column: 12/14;
             background-color: #D1C8FF;
-
     }
 
 
