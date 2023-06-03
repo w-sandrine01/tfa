@@ -1,5 +1,338 @@
 
 
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////*/
+/* Condition pour mobile */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+@media (max-width: 640px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/*///////////////////////////////////////////////////////////////////////*/
+/* Condition pour tablette */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+@media (min-width: 641px){
+
+.interviews{
+
+    .container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .circle3{
+        position: absolute;
+        left: -200px;
+        top: 300px;        
+        background-image: linear-gradient(#ceb8ff,#f2e5ff 99%);
+        filter: blur(60px);
+        width: 65vw;
+        height: 45vw;
+        border-radius: 100%;
+    }
+    .circle4{
+        position: absolute;
+        right: 100px;
+        top: 800px;
+        background-color: transparent;
+        background-image: linear-gradient(#FCFEA5,rgb(237, 240, 189) 99%);
+        filter: blur(60px);
+        width: 60vw;
+        height: 40vw;
+        border-radius: 100%;
+    }
+    .circle5{
+        position: absolute;
+        left: -50px;
+        bottom: 1200px;
+        background-color: transparent;
+        background-image: linear-gradient(#ceb8ff,#f2e5ff 99%);
+        filter: blur(60px);
+        width: 80vw;
+        height: 60vw;
+        border-radius: 100%;
+    }
+    .circle6{
+        position: absolute;
+        right: -50px;
+        bottom: 50px;
+        background-color: transparent;
+        background-image: linear-gradient(#FCFEA5,rgb(237, 240, 189) 99%);
+        filter: blur(60px);
+        width: 50vw;
+        height: 50vw;
+        border-radius: 100%;
+    }
+
+
+
+
+
+
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: #F8F1E8;
+    border-top: 2px solid black;
+
+    &__title{
+        grid-column: 1/9;
+        height: 150px;
+        background-color: black;
+        border-radius: 200px;
+    }
+
+    .container__parallax--interviews{
+        border-left: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 75px 48px;
+
+        .interviews__pic{
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 12vw;
+            height: 20%;
+            background-image: url('../assets/images/pcCoffee.jpg');
+        }
+    }
+
+    
+
+    .feedback{
+        grid-column: 1/9;
+        display: flex;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        position: relative;
+        z-index: 1;
+
+        div{
+            transition-delay: 1.8s;
+            
+            &:first-of-type{ padding: 75px 48px;}
+        }
+
+        h3{ padding-bottom: 50px;}
+        p{ margin-bottom: 25px;}
+    }
+
+
+
+
+
+
+    .question{
+        grid-column: 1/9;
+        padding: 75px 48px;
+        z-index: 1;
+
+        .rep{
+            background-color: #D9CDF3;
+            border: 1px solid #202020;
+            border-radius: 40px;
+            padding: 24px 48px;
+            width: 300px;
+        }
+
+        &.q1{
+            border-bottom: 2px solid black;
+
+            h4{ margin-bottom: 25px;}
+            
+            .q1__content{
+                max-width: 700px;
+
+                .rep:nth-child(1){
+                    margin: auto;
+                    margin-right: 0px;
+                    transition-delay: 3.6s;
+                }
+                .rep:nth-child(2){
+                    margin-top: 12px;
+                    background-color: #E7DBF2;
+                    transition-delay: 3.8s;
+                }
+                .rep:nth-child(3){
+                    margin: auto;
+                    margin-right: 48px;
+                    margin-top: -25px;
+                    transition-delay: 4s;
+                }
+
+                & > p{
+                        max-width: 400px;
+                        transition-delay: 4.2s;
+                        margin-top: 50px;
+                    }
+            } 
+        }
+        
+        
+        &.q2{            
+            grid-column: 3/9;
+            border-left: 2px solid black;
+            
+            .q2__content{   
+                .rep:nth-child(1){
+                    // top: 15vw;
+                    // right: 22vw;            
+                    background-color: #E7DBF2;
+                    z-index: 1;
+                    transition-delay: 4.2s;
+                }
+                .rep:nth-child(2){
+                    margin: auto;
+                    margin-right: 0;
+                    margin-top: -25px;
+                    margin-bottom: 50px;
+                    transition-delay: 4.4s;          
+                }
+
+                & > p{
+                        max-width: 400px;
+                        transition-delay: 4.6s;          
+                    }
+            }
+        }
+
+        
+        &.q3{
+            grid-column: 1/9;
+            border-top: 2px solid black;
+
+            h4{
+                max-width: 500px;
+                min-width: 400px;
+            }
+
+            .q3__content{             
+                display: flex;    
+                column-gap: 24px;   
+
+                & > p{
+                    min-width: 250px;
+                    margin-bottom: 50px;
+                    transition-delay: 4.2s;          
+                }
+
+                .rep{ 
+                    width: auto;
+                    min-width: 170px;
+                    transition-delay: 4s;
+                }
+            }
+        }   
+        
+        
+        &.q4{
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+
+            .q4__content{
+                div{
+                    max-width: 700px;
+                }
+                .rep:nth-child(1){  transition-delay: 4.6s;}
+                .rep:nth-child(2){
+                    background-color: #E7DBF2;    
+                    margin: auto;
+                    margin-right: 0;
+                    margin-top: 25px;
+                    transition-delay: 4.8s;
+                }
+                .rep:nth-child(3){
+                    margin-top: -25px;
+                    margin-bottom: 50px;
+                    transition-delay: 5s;
+                }
+                .q4__ccl{
+                    margin: auto;
+                    margin-right: 0;
+                    max-width: 400px;        
+                    align-self: center;
+                    transition-delay: 5.2s;
+
+                    p:nth-child(2){
+                        margin-top: 29px;  
+                    }                    
+                }
+            }
+        }    
+    } 
+    
+
+
+    // .container__parallax--question{
+    //     grid-column: 11/14;
+    //     border-top: 2px solid black;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     background-color: #FCFEA5;
+    //     position: relative;
+    //     z-index: 1;
+        
+    //     .question__pic{
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         background-image: url('../assets/images/bookStack.jpg');
+    //         width: 65%;
+    //         height: 60%;
+    //     }
+    // }
+        
+}
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////*/
+/* Condition pour desktop */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+@media (min-width: 1008px){
+
+
 .interviews{
     
     .container{
@@ -100,7 +433,6 @@
             height: 30%;
             width: 100%;
             background-image: url('../assets/images/pcCoffee.jpg');
-
         }
     }
 
@@ -299,4 +631,8 @@
         }
     }
       
+}
+
+
+
 }

@@ -1,5 +1,212 @@
 
 
+
+
+/*///////////////////////////////////////////////////////////////////////*/
+/* Condition pour mobile */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+@media (max-width: 640px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/*///////////////////////////////////////////////////////////////////////*/
+/* Condition pour tablette */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+@media (min-width: 641px){
+
+.apps{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: #F9F1E5;
+
+    &__title{
+        grid-column: 1/9;
+        min-height: 140px;
+        padding: 40px;
+        background-color: black;
+        border-radius: 200px;
+    }
+
+    // .bg{
+    //     grid-column: 8/9;
+    //     background-color: #FCFEA5;
+    //     border-left: 2px solid black;
+    //     border-top: 2px solid black;
+    //     border-bottom: 2px solid black;
+    // }
+
+    .container__apps{
+        grid-column: 1/9;
+        display: flex;
+        height: 70vh;
+        align-items: flex-end;
+        position: relative;        
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 50px 48px;
+    }
+
+    .app{
+        width: 20px;
+        border-radius: 8px;
+        flex: 0.7;
+        margin: 0 4px;
+        position: relative;
+        transition: all 0.7s ease-out;
+        overflow: hidden;
+
+        div{
+            position: absolute;
+        }
+
+        .title--cap{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        &__list {
+            list-style: none;
+            padding: 0;
+            
+            &__svg {
+                width: 25px;
+                height: 25px;
+                margin-right: 20px;
+                margin-bottom: -4px;
+                flex: 0 0 30px;
+            }
+
+            li{
+                font-family: "mr-eaves-modern", sans-serif;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 21px;  
+                line-height: 25px;
+                color: #202020;        
+                padding: 0 24px;
+                margin-bottom: 20px;
+                display: flex;
+            }
+        }
+            
+        
+
+        .contentOpen{
+            .app__svg{
+                width: 70px;
+                height: 70px;
+                display: block;
+                margin: 29px auto;
+                &--gr{
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            .app__png{
+                width: 80px;
+                height: 50px;
+                display: block;
+                margin: 29px auto;
+            }
+        }
+
+        .contentClosed{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: auto;
+
+            &:hover{
+                background-color: #FCFEA5;
+            }
+
+            .app__svg{
+                width: 70px;
+                height: 70px;
+                align-self:end;
+                margin-bottom: 20px;
+
+                &--gr{
+                    width: 70px;
+                    height: 70px;
+                    margin-bottom: 12px;
+                }
+            }
+            .app__png{
+                width: 90px;
+                height: 60px;
+                align-self: flex-end;
+                margin-bottom: 28px;
+            }
+            
+            .title--cap{
+                writing-mode: vertical-lr; 
+                text-align: center;
+                transform: translateX(-50%) translateY(-50%); /* Center the text */
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-bottom: 0;
+            }
+        }
+    } 
+
+    .app.active{
+        flex: 3;
+    }
+
+    .app:nth-child(1){
+        border: 2px solid black;          
+        height: 100%;
+    }
+    .app:nth-child(2){
+        border: 2px solid black;          
+        height: 85%;
+    }
+    .app:nth-child(3){
+        border: 2px solid black;          
+        height: 95%;
+    }
+
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////*/
+/* Condition pour desktop */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+@media (min-width: 1008px){
+
 .apps{
     display: grid;
     grid-template-columns: repeat(13, 1fr);
@@ -158,5 +365,9 @@
         border: 2px solid black;          
         height: 85%;
     }
+
+}
+
+
 
 }

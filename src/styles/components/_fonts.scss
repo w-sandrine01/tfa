@@ -2,6 +2,195 @@ h2, h3, h4, p{
     margin: 0;
 }
 
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////*/
+/* Condition pour mobile */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+@media (max-width: 640px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/*///////////////////////////////////////////////////////////////////////*/
+/* Condition pour tablette */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+@media (min-width: 641px){
+.title--big{
+    font-family: "utopia-std-display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21vw;
+    color: #202020;
+}
+
+.title--big--italic{
+    font-family: "utopia-std-display", serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 21vw;
+    color: #7268FF;
+}
+
+.title__sub{
+    font-family: "mr-eaves-modern", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 27px;
+    line-height: 30px;
+    text-align: center;
+    color: #202020;
+}
+
+.desc--bold{
+    font-family: "mr-eaves-modern", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 25px;
+    color: #5E56D4;
+}
+
+p{
+    font-family: "mr-eaves-modern", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 21px;  
+    line-height: 25px;
+    color: #202020;
+}
+
+.title--cap{
+    font-family: "utopia-std-display", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 27px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color:#202020;
+    margin: 0;
+}
+
+.title--section{
+    font-family: "mr-eaves-xl-sans-narrow", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 8vw;
+    margin: auto 24px;
+    line-height: 90%;
+}
+
+section h2{
+    height: 100%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h3, h3 a.underline{
+    font-family: "utopia-std-display", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 38px;
+    color: #202020;
+}
+
+
+// Why section ///////////////////////////////////////////
+
+.why .title--section{
+    color:#FCFEA5;
+}
+
+
+// Interviews section ///////////////////////////////////////////
+
+.interviews .title--section{
+    color: #D1C8FF;
+}
+
+h4{
+    font-family: "mr-eaves-xl-sans-narrow", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 40px;
+    color: #5E56D4;
+    margin-bottom: 50px;
+    max-width: 700px;
+}
+
+.rep{
+    font-family: "mr-eaves-modern", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: black;
+}
+
+.apps .title--section{
+    color: #FCFEA5;
+}
+
+.solutions .title--section{
+    color:#F8F1E8;
+}
+
+
+// Solutions section ///////////////////////////////////////////
+
+.solutions{
+    .title--section{
+        color: #D1C8FF;
+        font-size: 7vw;
+    }
+
+    .num p, div{
+        font-family: "mr-eaves-xl-sans-narrow", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 55px;
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////*/
+/* Condition pour desktop */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+@media (min-width: 1008px){
 .title--big{
     font-family: "utopia-std-display", serif;
     font-weight: 400;
@@ -146,3 +335,4 @@ h4{
     }
 }
 
+}

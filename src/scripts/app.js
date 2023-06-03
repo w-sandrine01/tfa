@@ -148,6 +148,11 @@ dragElements.forEach(function(el) {
 
 
 
+
+
+
+
+
 const dragElementsQ2 = document.querySelectorAll('.drag--q2');
 
 dragElementsQ2.forEach(function(el) {
@@ -434,38 +439,38 @@ document.addEventListener("mousemove", function move(e){
 
 //Parallax //////////////////////////////////////////////////////////////////////////////////////////////
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-let getRatio = el => window.innerHeight / (window.innerHeight + el.offsetHeight);
+// let getRatio = el => window.innerHeight / (window.innerHeight + el.offsetHeight);
 
-gsap.utils.toArray(".container__parallax").forEach((container, i) => {
-  container.bgp = container.querySelector(".bgp");
+// gsap.utils.toArray(".container__parallax").forEach((container, i) => {
+//   container.bgp = container.querySelector(".bgp");
 
-  gsap.fromTo(container.bgp, {
+//   gsap.fromTo(container.bgp, {
 
 
-    backgroundPosition: `50% ${-window.innerHeight * getRatio(container)}px`,
-    backgroundSize: "120%"
-  }, {
-    backgroundPosition: `50% ${window.innerHeight * (1 - getRatio(container))}px`,
-    ease: "none",
-    scrollTrigger: {
-      trigger: container,
-      start: "top bottom",
-      end: "bottom top",
-      scrub: true,
-      invalidateOnRefresh: true,
-      markers: true,
+//     backgroundPosition: `50% ${-window.innerHeight * getRatio(container)}px`,
+//     backgroundSize: "120%"
+//   }, {
+//     backgroundPosition: `50% ${window.innerHeight * (1 - getRatio(container))}px`,
+//     ease: "none",
+//     scrollTrigger: {
+//       trigger: container,
+//       start: "top bottom",
+//       end: "bottom top",
+//       scrub: true,
+//       invalidateOnRefresh: true,
+//       // markers: true,
 
-      onUpdate: (self) => {
-        const scrollSpeed = 10;
-        const newBackgroundPosition = `50% ${-window.scrollY / scrollSpeed}px`;
-        gsap.set(container.bgp, { backgroundPosition: newBackgroundPosition });
-      }
-    }
-  });
+//       onUpdate: (self) => {
+//         const scrollSpeed = 11;
+//         const newBackgroundPosition = `50% ${-window.scrollY / scrollSpeed}px`;
+//         gsap.set(container.bgp, { backgroundPosition: newBackgroundPosition });
+//       }
+//     }
+//   });
 
-});
+// });
 
 
 
