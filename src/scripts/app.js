@@ -458,7 +458,7 @@ gsap.utils.toArray(".container__parallax").forEach((container, i) => {
       markers: true,
 
       onUpdate: (self) => {
-        const scrollSpeed = 14;
+        const scrollSpeed = 10;
         const newBackgroundPosition = `50% ${-window.scrollY / scrollSpeed}px`;
         gsap.set(container.bgp, { backgroundPosition: newBackgroundPosition });
       }
@@ -651,4 +651,28 @@ sliders.forEach(slider => {
 
 
 
+// Highlight text animation ///////////////////////////////////////////
+
+const highlights = document.querySelectorAll(".highlight");
+var delay = 5000;
+
+function animateBackgroundPosition(el) {
+  let position = 0;
+  const animationInterval = setInterval(() => {
+    position--;
+    el.style.backgroundPosition = `${position}% 0`;
+
+    if (position <= -100) {
+      clearInterval(animationInterval);
+    }
+  }, 10);
+}
+
+
+highlights.forEach((element, index) => {
+  if(index == 1){ delay = 6500}
+  setTimeout(() => {
+    animateBackgroundPosition(element);
+  }, delay);
+});
 

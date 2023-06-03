@@ -8,21 +8,14 @@
 
 body{
     margin: 0;
-    padding: 0;    
-}
-.cursor{
-        cursor: url(../assets/images/cursor.png) 10 10, pointer;
-
+    padding: 0;     
+    cursor: url(../assets/images/cursor.png) 10 10, pointer;
 }
 
 ::selection {
     background-color:#f8f41f;
   }
 
-.highlight {
-background-color: yellow;
-padding: 0 5px;
-}
 
 .intro{    
     .circle1{
@@ -85,6 +78,14 @@ padding: 0 5px;
         .title__sub{
             padding: 0 48px;
             transition-delay: 3s;
+        }
+
+        .highlight {
+            background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #f8f41f 50%);
+            background-position: -0% 0;
+            background-size: 200% auto;
+            color: #222;
+            text-decoration: none;
         }
 
         .container__parallax{
