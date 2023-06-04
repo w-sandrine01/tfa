@@ -1,6 +1,27 @@
 import { gsap} from 'gsap';
 
 
+const app = document.querySelector(".app");
+
+app.addEventListener('click', () => {
+   app.classList.toggle('app--expanded');
+
+  // If card is not expanded after toggle, add 'unexpanded' class
+  if (!app.classList.contains('app--expanded')) 
+    app.classList.toggle('app--unexpanded');
+
+  // Else if card is expanded after toggle and still contains 'unexpanded' class, remove 'unexpanded'
+  else if (app.classList.contains('app--expanded') && app.classList.contains('app--unexpanded')) 
+    app.classList.toggle('app--unexpanded');
+})
+
+
+
+
+
+
+
+
 
 // Open div /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -54,37 +75,37 @@ pros.forEach((pro) => {
 
 // For the apps ////////////////////////////////////
 
-app1.querySelector('.contentOpen').style.visibility = "visible";
-app1.querySelector('.contentClosed').style.visibility = "hidden";
+// app1.querySelector('.contentOpen').style.visibility = "visible";
+// app1.querySelector('.contentClosed').style.visibility = "hidden";
 
-apps.forEach((app) => {
-    app.addEventListener('click',()=>{
+// apps.forEach((app) => {
+//     app.addEventListener('click',()=>{
 
-        apps.forEach((app) => {
-            app.classList.remove('active');
-            app.querySelector('.contentOpen').style.visibility = "hidden";
-            app.querySelector('.contentClosed').style.visibility = "visible";
-            app.style.flex = '';
-        })
+//         apps.forEach((app) => {
+//             app.classList.remove('active');
+//             app.querySelector('.contentOpen').style.visibility = "hidden";
+//             app.querySelector('.contentClosed').style.visibility = "visible";
+//             app.style.flex = '';
+//         })
 
-        app.classList.add('active');
-        app.querySelector('.contentOpen').style.visibility = "visible";
-        app.querySelector('.contentClosed').style.visibility = "hidden";
-        app.style.flex = '3';
-    })
+//         app.classList.add('active');
+//         app.querySelector('.contentOpen').style.visibility = "visible";
+//         app.querySelector('.contentClosed').style.visibility = "hidden";
+//         app.style.flex = '3';
+//     })
 
-    app.addEventListener('mouseover', () => {
-        if(!app.classList.contains('active')){
-            app.style.flex = '0.6';
-        }
-    })
-    app.addEventListener('mouseout', () => {
-        if(!app.classList.contains('active')){
-            app.style.flex = '';
-        }
-    })
+//     app.addEventListener('mouseover', () => {
+//         if(!app.classList.contains('active')){
+//             app.style.flex = '0.6';
+//         }
+//     })
+//     app.addEventListener('mouseout', () => {
+//         if(!app.classList.contains('active')){
+//             app.style.flex = '';
+//         }
+//     })
 
-})
+// })
 
 
 
@@ -145,7 +166,6 @@ dragElements.forEach(function(el) {
     el.style.zIndex = maxZIndex + 1;
   });
 });
-
 
 
 
@@ -299,45 +319,6 @@ dragElementsQ4.forEach(function(el) {
 
 // Mobile ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-dragElements.forEach(function(el) {
-    let newPosX = 0, newPosY = 0, startPosX = 0, startPosY = 0;
-
-    const container = document.querySelector('.container--q1');
-    const containerRect = container.getBoundingClientRect();
-    const containerWidth = containerRect.width;
-    const containerHeight = containerRect.height;
-
-    const maxX = containerWidth - el.offsetWidth;
-    const maxY = containerHeight - el.offsetHeight;
-
-    el.addEventListener('touchstart', function(e) {
-      e.preventDefault();
-      startPosX = e.touches[0].clientX;
-      startPosY = e.touches[0].clientY;
-
-      document.addEventListener('touchmove', touchMove);
-
-      document.addEventListener('touchend', function() {
-        document.removeEventListener('touchmove', touchMove);
-      });
-    });
-
-    function touchMove(e) {
-      newPosX = startPosX - e.touches[0].clientX;
-      newPosY = startPosY - e.touches[0].clientY;
-
-      startPosX = e.touches[0].clientX;
-      startPosY = e.touches[0].clientY;
-
-      const newLeft = Math.max(0, Math.min(el.offsetLeft - newPosX, maxX));
-      const newTop = Math.max(0, Math.min(el.offsetTop - newPosY, maxY));
-
-      el.style.top = newTop + "px";
-      el.style.left = newLeft + "px";
-    }
-  });
-
-
 
 
 
@@ -404,6 +385,70 @@ if(prev){
     number.textContent = "0" + (etape+1);
   })
 }
+
+
+// Slideshow mobile ///////////////////////////////////////////////////////////////////////////////////
+
+let widthContentMobile = document.querySelector('.slideshow__content');
+let widthWireframesMobile = document.querySelector('.slideshow__wireframes');
+let numberMobile = document.querySelector('.numActive--mobile');
+
+
+let textSlidesMobile = document.getElementsByClassName("slide__text");
+let imgSlidesMobile = document.getElementsByClassName("wireframe");
+let etapeMobile = 0;
+let nbSlideMobile = textSlidesMobile.length;
+let prevMobile = document.querySelector(".previous--mobile");
+let nextMobile = document.querySelector(".next--mobile");
+
+
+for(let i = 0; i < nbSlideMobile; i++){
+    textSlidesMobile[i].style.width = widthContentMobile.offsetWidth - 144 + "px";
+    imgSlidesMobile[i].style.width = widthWireframesMobile.offsetWidth + "px";
+}
+
+function removeActiveMobile(){
+    for(let i = 0; i < nbSlideMobile; i++){
+        textSlidesMobile[i].classList.remove('active');
+        imgSlidesMobile[i].classList.remove('active');
+    }
+}
+
+if(nextMobile){
+    nextMobile.addEventListener('click',function(){
+    etapeMobile++;
+
+    if(etapeMobile >= nbSlideMobile){
+        etapeMobile=0;
+    }
+
+    removeActiveMobile();
+
+    textSlidesMobile[etapeMobile].classList.add('active');
+    imgSlidesMobile[etapeMobile].classList.add('active');
+    numberMobile.textContent = "0" + (etapeMobile+1);
+  })
+}
+
+if(prevMobile){
+  prevMobile.addEventListener('click', function(){
+    etapeMobile--;
+
+    if(etapeMobile < 0){
+        etapeMobile = nbSlideMobile-1;
+    }
+
+    removeActiveMobile();
+
+    textSlidesMobile[etapeMobile].classList.add('active');
+    imgSlidesMobile[etapeMobile].classList.add('active');
+    numberMobile.textContent = "0" + (etapeMobile+1);
+  })
+}
+
+
+
+
 
 
 

@@ -13,6 +13,82 @@
 
 @media (max-width: 640px){
 
+.why{
+    background-color: #F9F1E5;
+
+    &__title{
+        height: 100px;
+        background-color: black;
+        border-radius: 200px;
+    }
+
+    .container__parallax{
+        border-top: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 46px 0;
+        background-color: #FCFEA5;
+
+        .why__pic{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('../assets/images/readingBed.jpg');
+            background-repeat: no-repeat;
+            width: 80%;
+            height: 200px;
+            border-top: 2px solid black;
+        }
+    }
+    
+
+
+    .content1{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 69px 24px;
+
+        h3{
+            margin-bottom: 50px;        
+            transition-delay: 1.8s;
+        }
+        p{  transition-delay: 1.8s;}
+        p:first-of-type{
+            margin-bottom: 23px;
+        }
+    }
+
+    .content2{
+        padding: 69px 24px;
+        border-top: 2px solid black;
+
+        div{
+            flex: 1;
+            
+            h3{
+                padding-bottom: 46px;
+            }
+            &:nth-child(1){
+                p{
+                    margin-bottom: 69px;
+                }
+            }
+
+            &:nth-child(2){
+                transition-delay: 0.2s;
+            }
+        }
+    }
+
+    .bg {   display: none;}
+    .bg--mobile{
+            background-color: #D1C8FF;
+            height: 60px;
+    }
+
+
+}   
 }
 
 
@@ -106,7 +182,7 @@
             }
             &:nth-child(1){
                 p{
-                    margin-bottom: 50px;
+                    margin-bottom: 75px;
                 }
             }
             
@@ -117,6 +193,7 @@
         }
     }
 
+    .bg--mobile {   display: none;}
     .bg{
             grid-column: 7/9;
             background-color: #D1C8FF;
@@ -243,6 +320,7 @@
         }
     }
 
+    .bg--mobile {   display: none;}
     .bg{
             grid-column: 12/14;
             background-color: #D1C8FF;

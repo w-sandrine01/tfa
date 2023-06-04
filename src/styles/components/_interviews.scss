@@ -11,6 +11,258 @@
 
 @media (max-width: 640px){
 
+.interviews{
+
+    .container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .circle3{
+        position: absolute;
+        left: -200px;
+        top: 300px;        
+        background-image: linear-gradient(#ceb8ff,#f2e5ff 99%);
+        filter: blur(60px);
+        width: 65vw;
+        height: 45vw;
+        border-radius: 100%;
+    }
+    .circle4{
+        position: absolute;
+        right: 100px;
+        top: 800px;
+        background-color: transparent;
+        background-image: linear-gradient(#FCFEA5,rgb(237, 240, 189) 99%);
+        filter: blur(60px);
+        width: 60vw;
+        height: 40vw;
+        border-radius: 100%;
+    }
+    .circle5{
+        position: absolute;
+        left: -50px;
+        bottom: 1200px;
+        background-color: transparent;
+        background-image: linear-gradient(#ceb8ff,#f2e5ff 99%);
+        filter: blur(60px);
+        width: 80vw;
+        height: 60vw;
+        border-radius: 100%;
+    }
+    .circle6{
+        position: absolute;
+        right: -50px;
+        bottom: 50px;
+        background-color: transparent;
+        background-image: linear-gradient(#FCFEA5,rgb(237, 240, 189) 99%);
+        filter: blur(60px);
+        width: 50vw;
+        height: 50vw;
+        border-radius: 100%;
+    }
+
+
+
+
+
+
+    overflow: hidden;
+    position: relative;
+    background-color: #F8F1E8;
+    border-top: 2px solid black;
+
+    &__title{
+        height: 100px;
+        background-color: black;
+        border-radius: 200px;
+    }
+
+    .container__parallax--interviews{
+        border-top: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 69px 24px;
+
+        .interviews__pic{
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 100px;
+            background-image: url('../assets/images/pcCoffee.jpg');
+        }
+    }
+
+    
+
+    .feedback{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        position: relative;
+        z-index: 1;
+
+        div{
+            transition-delay: 1.8s;
+            
+            &:first-of-type{ padding: 69px 24px;}
+        }
+
+        h3{ padding-bottom: 46px;}
+    }
+
+
+
+
+
+
+    .question{
+        padding: 69px 24px;
+        z-index: 1;
+
+        .rep{
+            background-color: #D9CDF3;
+            border: 1px solid #202020;
+            border-radius: 40px;
+            padding: 12px 24px;
+            width: 200px;
+        }
+
+        &.q1{
+            border-bottom: 2px solid black;
+
+            h4{ margin-bottom: 25px;}
+            
+            .q1__content{
+                max-width: 700px;
+
+                .rep:nth-child(1){
+                    margin: auto;
+                    margin-right: 0px;
+                    transition-delay: 3.6s;
+                }
+                .rep:nth-child(2){
+                    margin-top: 12px;
+                    background-color: #E7DBF2;
+                    transition-delay: 3.8s;
+                }
+                .rep:nth-child(3){
+                    margin: auto;
+                    margin-right: 48px;
+                    margin-top: -10px;
+                    transition-delay: 4s;
+                }
+
+                & > p{
+                        transition-delay: 4.2s;
+                        margin-top: 46px;
+                    }
+            } 
+        }
+        
+        
+        &.q2{                        
+            .q2__content{   
+                .rep:nth-child(1){
+                    background-color: #E7DBF2;
+                    z-index: 1;
+                    transition-delay: 4.2s;
+                }
+                .rep:nth-child(2){
+                    margin: auto;
+                    margin-right: 0;
+                    margin-top: -10px;
+                    margin-bottom: 46px;
+                    transition-delay: 4.4s;          
+                }
+
+                & > p{
+                        max-width: 400px;
+                        transition-delay: 4.6s;          
+                    }
+            }
+        }
+
+        
+        &.q3{
+            border-top: 2px solid black;
+
+            .q3__content{             
+                & > p{
+                    margin-bottom: 46px;
+                    transition-delay: 4.2s;          
+                }
+
+                .rep{ 
+                    width: auto;
+                    transition-delay: 4s;
+                }
+            }
+        }   
+        
+        
+        &.q4{
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+
+            .q4__content{
+                .rep:nth-child(1){  transition-delay: 4.6s;}
+                .rep:nth-child(2){
+                    background-color: #E7DBF2;    
+                    margin: auto;
+                    margin-right: 0;
+                    margin-top: 23px;
+                    transition-delay: 4.8s;
+                }
+                .rep:nth-child(3){
+                    margin-top: -10px;
+                    margin-bottom: 46px;
+                    transition-delay: 5s;
+                }
+                .q4__ccl{
+                    margin: auto;
+                    margin-right: 0;
+                    max-width: 400px;        
+                    align-self: center;
+                    transition-delay: 5.2s;
+
+                    p:nth-child(2){
+                        margin-top: 23px;  
+                    }                    
+                }
+            }
+        }    
+    } 
+    
+
+
+    .container__parallax--question{
+        border-top: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FCFEA5;
+        position: relative;
+        z-index: 1;
+        padding: 69px 24px;        
+        
+        .question__pic{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('../assets/images/bookStack.jpg');
+            width: 90%;
+            height: 200px;
+        }
+    }
+        
+}
+    
+        
 }
 
 
