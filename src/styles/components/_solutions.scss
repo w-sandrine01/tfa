@@ -67,21 +67,21 @@
     }
 
     .slideshow{
-        height: 70vh;
+        // height: 100vh;
         border-top: 2px solid black;
         display: grid;
-        grid-template-columns: 1fr 0.6fr;
-        grid-template-rows: 1fr 100px;
+        grid-template-rows: 1fr 1fr 80px;
         grid-template-areas:
-            "first second"
-            "third third";
+            "wireframe"
+            "text"
+            "page";
             
         
         &__page--pc{ display: none;}
         &__page--mobile{
             background-color: #D1C8FF;
             border-top: 2px solid black;
-            grid-area: third;
+            grid-area: page;
             display: flex;
             justify-content: center;
 
@@ -93,14 +93,14 @@
                     background: none;
                     border-radius: 50%;
                     border: 2px solid black;
-                    height: 60px;
-                    width: 60px;
+                    height: 50px;
+                    width: 50px;
                     align-self: center;
                 }
                 svg{
                     margin-top: 3px;
-                    width: 40px;
-                    height: 40px;
+                    width: 30px;
+                    height: 30px;
                 }
             }
 
@@ -119,12 +119,13 @@
 
 
         &__content{
-            border-right: 2px solid black;
-            grid-area: first;
-            padding: 50px 48px 50px 48px;
+            border-top: 2px solid black;
+            grid-area: text;
+            padding: 46px 24px 46px 24px;
             display: flex;
             align-items: flex-end;
-;
+            // height: 100vh;
+
             .slide__text{
                 position: absolute;
                 display: none;
@@ -135,12 +136,10 @@
 
                 h3{
                     padding-bottom: 50px;   
-                    width: 110%;       
+                    width: calc(100vw - 48px);       
                 } 
 
-                p{
-                    width: 110%;
-                }
+                p{  width: calc(100vw - 48px);}
                 ol{
                     list-style-type: none;
                     counter-reset: my-counter;
@@ -152,7 +151,7 @@
                     color: #202020;
                     padding: 0;
                     margin: 0;
-                    width: 110%;
+                    width: calc(100vw - 48px);
 
 
                     li{
@@ -177,10 +176,10 @@
         }
 
         &__wireframes{
-            grid-area: second;
+            grid-area: wireframe;
             overflow: hidden;
             position: relative;
-
+            height: 70vh;
 
             .wireframe{
                 position: absolute;

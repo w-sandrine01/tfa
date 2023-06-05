@@ -1,21 +1,6 @@
 import { gsap} from 'gsap';
 
 
-const app = document.querySelector(".app");
-
-app.addEventListener('click', () => {
-   app.classList.toggle('app--expanded');
-
-  // If card is not expanded after toggle, add 'unexpanded' class
-  if (!app.classList.contains('app--expanded')) 
-    app.classList.toggle('app--unexpanded');
-
-  // Else if card is expanded after toggle and still contains 'unexpanded' class, remove 'unexpanded'
-  else if (app.classList.contains('app--expanded') && app.classList.contains('app--unexpanded')) 
-    app.classList.toggle('app--unexpanded');
-})
-
-
 
 
 
@@ -75,40 +60,58 @@ pros.forEach((pro) => {
 
 // For the apps ////////////////////////////////////
 
-// app1.querySelector('.contentOpen').style.visibility = "visible";
-// app1.querySelector('.contentClosed').style.visibility = "hidden";
+app1.querySelector('.contentOpen').style.visibility = "visible";
+app1.querySelector('.contentClosed').style.visibility = "hidden";
 
-// apps.forEach((app) => {
-//     app.addEventListener('click',()=>{
+apps.forEach((app) => {
+    app.addEventListener('click',()=>{
 
-//         apps.forEach((app) => {
-//             app.classList.remove('active');
-//             app.querySelector('.contentOpen').style.visibility = "hidden";
-//             app.querySelector('.contentClosed').style.visibility = "visible";
-//             app.style.flex = '';
-//         })
+        apps.forEach((app) => {
+            app.classList.remove('active');
+            app.querySelector('.contentOpen').style.visibility = "hidden";
+            app.querySelector('.contentClosed').style.visibility = "visible";
+            app.style.flex = '';
+        })
 
-//         app.classList.add('active');
-//         app.querySelector('.contentOpen').style.visibility = "visible";
-//         app.querySelector('.contentClosed').style.visibility = "hidden";
-//         app.style.flex = '3';
-//     })
+        app.classList.add('active');
+        app.querySelector('.contentOpen').style.visibility = "visible";
+        app.querySelector('.contentClosed').style.visibility = "hidden";
+        app.style.flex = '3';
+    })
 
-//     app.addEventListener('mouseover', () => {
-//         if(!app.classList.contains('active')){
-//             app.style.flex = '0.6';
-//         }
-//     })
-//     app.addEventListener('mouseout', () => {
-//         if(!app.classList.contains('active')){
-//             app.style.flex = '';
-//         }
-//     })
+    app.addEventListener('mouseover', () => {
+        if(!app.classList.contains('active')){
+            app.style.flex = '0.6';
+        }
+    })
+    app.addEventListener('mouseout', () => {
+        if(!app.classList.contains('active')){
+            app.style.flex = '';
+        }
+    })
 
-// })
+})
 
 
 
+// Mobile Drag and drop ///////////////////////////////////////////////////////////////////////////////////
+
+const appsMobile = document.querySelectorAll(".app--mobile");
+
+appsMobile.forEach((app) => {
+  app.addEventListener("click", () => {
+    app.classList.toggle("app--expanded");
+
+    if (!app.classList.contains("app--expanded")) {
+      app.classList.add("app--unexpanded");
+    } else if (
+      app.classList.contains("app--expanded") &&
+      app.classList.contains("app--unexpanded")
+    ) {
+      app.classList.remove("app--unexpanded");
+    }
+  });
+});
 
 
 
@@ -342,9 +345,15 @@ let prev = document.querySelector(".previous");
 let next = document.querySelector(".next");
 
 
+// for(let i = 0; i < nbSlide; i++){
+//     textSlides[i].style.width = widthContent.offsetWidth - 144 + "px";
+//     imgSlides[i].style.width = widthWireframes.offsetWidth + "px";
+// }
+
+
 for(let i = 0; i < nbSlide; i++){
-    textSlides[i].style.width = widthContent.offsetWidth - 144 + "px";
-    imgSlides[i].style.width = widthWireframes.offsetWidth + "px";
+  textSlides[i].style.width = widthContent.offsetWidth + "px";
+  imgSlides[i].style.width = widthWireframes.offsetWidth + "px";
 }
 
 function removeActive(){
@@ -484,7 +493,7 @@ document.addEventListener("mousemove", function move(e){
 
 //Parallax //////////////////////////////////////////////////////////////////////////////////////////////
 
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 // let getRatio = el => window.innerHeight / (window.innerHeight + el.offsetHeight);
 
@@ -520,6 +529,20 @@ document.addEventListener("mousemove", function move(e){
 
 
 
+
+gsap.utils.toArray(".test").forEach((container) => {
+
+  gsap.to(container.querySelector(".bgp"), {
+    y: "-25%",
+    ease: "none",
+    scrollTrigger: {
+      trigger: container,
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true
+    }, 
+  });
+});
 
 
 

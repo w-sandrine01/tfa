@@ -359,20 +359,30 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 75px 48px;
-
-        .interviews__pic{
-            border-top: 2px solid black;
-            border-right: 2px solid black;
-            border-bottom: 2px solid black;
-
+        padding: 0 24px;
+        flex: 0 0 40%;
+        
+        .test{
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 30%;
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 12vw;
-            height: 20%;
-            background-image: url('../assets/images/pcCoffee.jpg');
+            border-radius: 20px;
+            border: 2px solid black;
+
+           .interviews__pic{
+                position: absolute;
+                top: 0%;
+                height: 90%;
+                width: 100%;
+                background-image: url('../assets/images/pcCoffee.jpg');
+            } 
         }
+        
     }
 
     
@@ -386,7 +396,8 @@
         z-index: 1;
 
         div{
-            transition-delay: 1.8s;
+
+            // transition-delay: 1.8s;
             
             &:first-of-type{ padding: 75px 48px;}
         }
@@ -537,34 +548,8 @@
                 }
             }
         }    
-    } 
-    
-
-
-    // .container__parallax--question{
-    //     grid-column: 11/14;
-    //     border-top: 2px solid black;
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     background-color: #FCFEA5;
-    //     position: relative;
-    //     z-index: 1;
-        
-    //     .question__pic{
-    //         display: flex;
-    //         justify-content: center;
-    //         align-items: center;
-    //         background-image: url('../assets/images/bookStack.jpg');
-    //         width: 65%;
-    //         height: 60%;
-    //     }
-    // }
-        
+    }         
 }
-
-    
-
 }
 
 
@@ -643,7 +628,6 @@
 
     overflow: hidden;
     position: relative;
-    // z-index: -2;
     display: grid;
     grid-template-columns: repeat(13, 1fr);
     background-color: #F8F1E8;
@@ -656,36 +640,31 @@
         border-radius: 200px;
     }
 
-    .container__parallax--interviews{
-        // position: relative;
-        // height: 100vh;
-        // width: 50vw;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        // background-color: #FCFEA5; 
-        // border-bottom: 2px solid black;
-        // border-top: 2px solid black;
-
-        border-left: 2px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 87px 87px;
+    .container__parallax--interviews{        
         grid-column: 10/14;
+        border-left: 2px solid black;
+        padding: 87px 72px;
 
-        .interviews__pic{
-            border-top: 2px solid black;
-            border-right: 2px solid black;
-            border-bottom: 2px solid black;
-
+        .test{
+            display: block;
+            position: relative;
+            width: 80%;
+            height: 50%;
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 30%;
-            width: 100%;
+            border-radius: 20px;
+            border: 2px solid black;
+
+            .interviews__pic{
+            position: absolute;
+            top: -5%;
+            height: 100%;
+            width: 90%;
             background-image: url('../assets/images/pcCoffee.jpg');
-        }
+            }
+        }        
     }
 
    
@@ -700,7 +679,8 @@
 
         div{
             flex: 1;
-            transition-delay: 1.8s;
+            // transition-delay: 1.8s;
+            transition-delay: initial;
             
             &:first-of-type{
                 padding: 116px 72px;
@@ -765,7 +745,6 @@
                         align-items: center;
                         transition-delay: 4.2s;
                     }
-                
             } 
         }
         
@@ -866,21 +845,31 @@
     .container__parallax--question{
         grid-column: 11/14;
         border-top: 2px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-color: #FCFEA5;
-        position: relative;
         z-index: 1;
+        padding: 116px 72px;
        
-        .question__pic{
+        .test{
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url('../assets/images/bookStack.jpg');
-            width: 65%;
-            height: 60%;
+            border-radius: 20px;
+            border: 2px solid black ;
+
+            .question__pic{
+                position: absolute;
+                top: 0%;
+                background-image: url('../assets/images/bookStack.jpg');
+                width: 100%;
+                height: 140%;
+            }
         }
+        
     }
       
 }
