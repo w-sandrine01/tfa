@@ -70,7 +70,7 @@
         // height: 100vh;
         border-top: 2px solid black;
         display: grid;
-        grid-template-rows: 1fr 1fr 80px;
+        grid-template-rows: 70vh auto 80px;
         grid-template-areas:
             "wireframe"
             "text"
@@ -121,10 +121,9 @@
         &__content{
             border-top: 2px solid black;
             grid-area: text;
-            padding: 46px 24px 46px 24px;
+            padding: 69px 24px 69px 24px;
             display: flex;
             align-items: flex-end;
-            // height: 100vh;
 
             .slide__text{
                 position: absolute;
@@ -453,6 +452,7 @@
             .slide__text{
                 position: absolute;
                 display: none;
+                max-width: 700px;  
 
                 &.active{
                     display: block;

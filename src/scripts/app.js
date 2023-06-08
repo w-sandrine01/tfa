@@ -1,9 +1,4 @@
-import { gsap} from 'gsap';
-
-
-
-
-
+"use strict";
 
 
 
@@ -345,12 +340,6 @@ let prev = document.querySelector(".previous");
 let next = document.querySelector(".next");
 
 
-// for(let i = 0; i < nbSlide; i++){
-//     textSlides[i].style.width = widthContent.offsetWidth - 144 + "px";
-//     imgSlides[i].style.width = widthWireframes.offsetWidth + "px";
-// }
-
-
 for(let i = 0; i < nbSlide; i++){
   textSlides[i].style.width = widthContent.offsetWidth + "px";
   imgSlides[i].style.width = widthWireframes.offsetWidth + "px";
@@ -402,7 +391,6 @@ let widthContentMobile = document.querySelector('.slideshow__content');
 let widthWireframesMobile = document.querySelector('.slideshow__wireframes');
 let numberMobile = document.querySelector('.numActive--mobile');
 
-
 let textSlidesMobile = document.getElementsByClassName("slide__text");
 let imgSlidesMobile = document.getElementsByClassName("wireframe");
 let etapeMobile = 0;
@@ -410,8 +398,14 @@ let nbSlideMobile = textSlidesMobile.length;
 let prevMobile = document.querySelector(".previous--mobile");
 let nextMobile = document.querySelector(".next--mobile");
 
+const mediaQuery = window.matchMedia('(max-width: 640px)')
+
+if (mediaQuery.matches) {
+  widthContentMobile.style.height = document.querySelector('.slide__text.active').offsetHeight - widthContentMobile.offsetHeight/3 + 'px';
+}
 
 for(let i = 0; i < nbSlideMobile; i++){
+
     textSlidesMobile[i].style.width = widthContentMobile.offsetWidth - 144 + "px";
     imgSlidesMobile[i].style.width = widthWireframesMobile.offsetWidth + "px";
 }
@@ -436,6 +430,8 @@ if(nextMobile){
     textSlidesMobile[etapeMobile].classList.add('active');
     imgSlidesMobile[etapeMobile].classList.add('active');
     numberMobile.textContent = "0" + (etapeMobile+1);
+
+    widthContentMobile.style.height = textSlidesMobile[etapeMobile].offsetHeight + 'px';
   })
 }
 
@@ -452,12 +448,14 @@ if(prevMobile){
     textSlidesMobile[etapeMobile].classList.add('active');
     imgSlidesMobile[etapeMobile].classList.add('active');
     numberMobile.textContent = "0" + (etapeMobile+1);
+
+    widthContentMobile.style.height = textSlidesMobile[etapeMobile].offsetHeight + 'px';
   })
 }
 
+    
 
-
-
+    
 
 
 
@@ -495,42 +493,7 @@ document.addEventListener("mousemove", function move(e){
 
 gsap.registerPlugin(ScrollTrigger);
 
-// let getRatio = el => window.innerHeight / (window.innerHeight + el.offsetHeight);
-
-// gsap.utils.toArray(".container__parallax").forEach((container, i) => {
-//   container.bgp = container.querySelector(".bgp");
-
-//   gsap.fromTo(container.bgp, {
-
-
-//     backgroundPosition: `50% ${-window.innerHeight * getRatio(container)}px`,
-//     backgroundSize: "120%"
-//   }, {
-//     backgroundPosition: `50% ${window.innerHeight * (1 - getRatio(container))}px`,
-//     ease: "none",
-//     scrollTrigger: {
-//       trigger: container,
-//       start: "top bottom",
-//       end: "bottom top",
-//       scrub: true,
-//       invalidateOnRefresh: true,
-//       // markers: true,
-
-//       onUpdate: (self) => {
-//         const scrollSpeed = 11;
-//         const newBackgroundPosition = `50% ${-window.scrollY / scrollSpeed}px`;
-//         gsap.set(container.bgp, { backgroundPosition: newBackgroundPosition });
-//       }
-//     }
-//   });
-
-// });
-
-
-
-
-
-gsap.utils.toArray(".test").forEach((container) => {
+gsap.utils.toArray(".container__image").forEach((container) => {
 
   gsap.to(container.querySelector(".bgp"), {
     y: "-25%",
@@ -539,7 +502,7 @@ gsap.utils.toArray(".test").forEach((container) => {
       trigger: container,
       start: "top bottom",
       end: "bottom top",
-      scrub: true
+      scrub: true,
     }, 
   });
 });

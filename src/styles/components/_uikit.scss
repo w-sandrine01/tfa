@@ -1,0 +1,306 @@
+
+/* ui-kit.html ///////////////////////////////////////////////////////// */
+@media (max-width: 640px){
+    
+    .kit--title{
+        text-align: center;
+        margin: 68px 0;
+    
+        span{   font-size: 60px;}
+    }
+    
+    .kit{
+        font-family: "mr-eaves-modern", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 19px;  
+        padding: 0 23px 0 23px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 56px;
+    }
+    
+    
+    /* Fonts ///////////////////////// */
+    
+    .kit__fonts--title{
+        padding: 0px 48px 0px 0px;
+        opacity: 0.6;
+    }
+    
+    .kit__fonts p{
+        font-size: 24px;
+        margin-bottom: 20px;
+        line-height: 26px;
+    }
+    .kit__fonts p:nth-child(1){
+        font-family: "utopia-std-display", serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 30px;
+    }
+    
+    .kit__fonts p:nth-child(2){
+        font-family: "utopia-std-display", serif;
+        font-weight: 600;
+        font-style: italic;
+    }
+    
+    .kit__fonts p:nth-child(3){      
+        font-family: "mr-eaves-modern", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    .kit__fonts p:nth-child(4){
+        font-family: "mr-eaves-modern", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .kit__fonts p:nth-child(5){
+        font-family: "mr-eaves-xl-sans-narrow", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+    
+    
+    /* Links ///////////////////////// */
+    
+    .kit__links--title{
+        padding: 0px 48px 0px 0px;
+        opacity: 0.6;
+    }
+    
+    .kit__links{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .kit__links p{
+        margin: 0px 15px 10px auto;
+    }
+    
+    .kit__links p:nth-child(2)::after{
+        content: '';
+        display: block;        
+        width: 42px;
+        height: 1px;
+        border-radius: 2px;
+        background: black; 
+    }
+    
+    .kit__links p:nth-child(3){  
+        color: rgb(150, 150, 150);
+    }
+    
+    
+    /* Colors///////////////////////// */
+    
+    .kit__colors{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .kit__colors--title{
+        padding: 10px 35px 0px 0px;
+        opacity: 0.6;
+    }
+    
+    .kit__colors div{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        content: "";
+        display: block;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    
+    .kit__colors div:nth-child(1){
+        border: 1px solid #202020;
+        background-color: #F8F1E8;
+    }
+    
+    .kit__colors div:nth-child(2){
+        background-color: #FCFEA5;
+    }
+    
+    .kit__colors div:nth-child(3){
+        background-color: #D1C8FF;  
+    }
+    
+    .kit__colors div:nth-child(4){
+        background-color: #5E56D4;
+    }
+    
+    .kit__colors div:nth-child(5){
+        background-color: #202020;
+    }
+    
+    
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 641px){
+    
+.kit--title{
+    text-align: center;
+    margin: 68px 0;
+
+    span{   font-size: 60px;}
+}
+
+.kit{
+    font-family: "mr-eaves-modern", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 23px;  
+    padding: 0 29px 0 29px;
+    display: flex;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 58px;
+}
+
+
+/* Fonts ///////////////////////// */
+
+.kit__fonts--title{
+    padding: 0px 135px 0px 0px;
+    opacity: 0.6;
+}
+
+.kit__fonts p{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.kit__fonts p:nth-child(1){
+    font-family: "utopia-std-display", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+}
+
+.kit__fonts p:nth-child(2){
+    font-family: "utopia-std-display", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.kit__fonts p:nth-child(3){      
+    font-family: "mr-eaves-modern", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kit__fonts p:nth-child(4){
+    font-family: "mr-eaves-modern", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.kit__fonts p:nth-child(5){
+    font-family: "mr-eaves-xl-sans-narrow", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/* Links ///////////////////////// */
+
+.kit__links--title{
+    padding: 0px 137px 0px 0px;
+    opacity: 0.6;
+}
+
+.kit__links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kit__links p{
+    margin: 0px 15px 10px auto;
+}
+
+.kit__links p:nth-child(2)::after{
+    content: '';
+    display: block;        
+    width: 50px;
+    height: 1px;
+    border-radius: 2px;
+    background: black; 
+}
+
+.kit__links p:nth-child(3){  
+    color: rgb(150, 150, 150);
+}
+
+
+/* Colors///////////////////////// */
+
+.kit__colors{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kit__colors--title{
+    padding: 10px 118px 0px 0px;
+    opacity: 0.6;
+}
+
+.kit__colors div{
+    margin-right: 15px;
+    margin-bottom: 10px;
+    content: "";
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.kit__colors div:nth-child(1){
+    border: 1px solid #202020;
+    background-color: #F8F1E8;
+}
+
+.kit__colors div:nth-child(2){
+    background-color: #FCFEA5;
+}
+
+.kit__colors div:nth-child(3){
+    background-color: #D1C8FF;  
+}
+
+.kit__colors div:nth-child(4){
+    background-color: #5E56D4;
+}
+
+.kit__colors div:nth-child(5){
+    background-color: #202020;
+}
+
+
+
+}
+
+

@@ -68,7 +68,7 @@ h2, h3, h4, p{
         margin: 0;
     }
 
-    .title--cap--test{
+    .title--cap--mobile{
         font-family: "utopia-std-display", serif;
         font-weight: 600;
         font-style: normal;
@@ -164,6 +164,28 @@ h2, h3, h4, p{
             font-style: normal;
             font-size: 39px;
         }
+    }
+
+
+
+        
+    // Footer ///////////////////////////////////////////
+
+    .subnav {
+        list-style: none;
+        font-family: "mr-eaves-modern", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 15px;
+    }
+
+    .title--reseaux{
+        font-family: "utopia-std-display", serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 19px;
+        text-transform: uppercase;
+        margin: 0;
     }
     
 }
@@ -326,6 +348,25 @@ h4{
         font-size: 43px;
     }
 }
+
+// Footer ///////////////////////////////////////////
+
+.subnav {
+    list-style: none;
+    font-family: "mr-eaves-modern", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+}
+
+.title--reseaux{
+    font-family: "utopia-std-display", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 21px;
+    text-transform: uppercase;
+    margin: 0;
+}
 }
 
 
@@ -478,6 +519,7 @@ h4{
 .solutions{
     .title--section{
         color: #D1C8FF;
+        padding: 0;
     }
 
     .num p, div{
@@ -488,4 +530,30 @@ h4{
     }
 }
 
+
+
+
+// Footer ///////////////////////////////////////////
+
+.subnav {
+    list-style: none;
+    font-family: "mr-eaves-modern", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 19px;
 }
+
+.title--reseaux{
+    font-family: "utopia-std-display", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 23px;
+    text-transform: uppercase;
+    margin: 0;
+}
+}
+
+
+
+
+

@@ -24,20 +24,31 @@
 
     .container__parallax{
         border-top: 2px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 46px 0;
         background-color: #FCFEA5;
 
-        .why__pic{
+        .container__image{
+            display: block;
+            position: relative;
+            margin: auto;
+            width: 80%;
+            height: 200px;
+            overflow: hidden;
+            border: 2px solid black;
+
             display: flex;
             justify-content: center;
             align-items: center;
+            border-radius: 20px;
+        }
+
+        .why__pic{
+            position: absolute;
+            top: -10%;
             background-image: url('../assets/images/readingBed.jpg');
             background-repeat: no-repeat;
-            width: 80%;
-            height: 200px;
+            width: 100%;
+            height: 200%;
             border-top: 2px solid black;
         }
     }
@@ -132,7 +143,7 @@
         background-color: #FCFEA5;
         display: flex;
 
-        .test{
+        .container__image{
             display: block;
             position: relative;
             margin: auto;
@@ -233,7 +244,6 @@
     grid-template-columns: repeat(13, 1fr);
     background-color: #F9F1E5;
 
-
     &__title{
         grid-column: 1/14;
         height: 180px;
@@ -247,7 +257,7 @@
         padding: 87px 96px;
         background-color: #FCFEA5;
 
-        .test{
+        .container__image{
             display: block;
             position: relative;
             width: 100%;
@@ -279,10 +289,16 @@
         padding: 116px 72px;
 
         h3{
+            max-width: 700px;
+            margin: auto;
             margin-bottom: 58px;        
             transition-delay: 1.8s;
         }
-        p{  transition-delay: 1.8s;}
+        p{  
+            transition-delay: 1.8s;
+            max-width: 700px;
+            margin: auto;
+        }
         p:first-of-type{
             margin-bottom: 29px;
         }
@@ -301,9 +317,13 @@
             
             h3{
                 padding-bottom: 58px;
+                max-width: 700px;
+                margin: auto;    
             }
             p:first-of-type{
                 margin-bottom: 29px;
+                max-width: 700px;
+                margin: auto;    
             }
 
             &:nth-child(2){

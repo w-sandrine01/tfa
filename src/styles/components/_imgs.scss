@@ -5,39 +5,8 @@
 /* Condition pour mobile */
 /*//////////////////////////////////////////////////////////////////////////*/
 
-@media (max-width: 640px){
-.imgMeeting{
-    width: 100%;
-    height: 9vw;
+.imgBed, .imgMeeting, .imgPc, .imgPile{
     object-fit: cover;
-    border-radius: 200px;
-    margin-top: 12px;
-}
-
-.imgShelf{
-    object-position: 40% 60%;
-
-}
-.imgMeeting{
-    object-position: bottom;
-}
-
-.imgBed{
-    width: 65%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.imgPc{
-    width: 65%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.imgPile{
-    width: 65%;
-    object-fit: cover;
-    border-radius: 20px;
 }
 
 .wireframe{
@@ -47,34 +16,12 @@
     height: 100%;
 }
 
-
-
 .bgp {
-    // width: 65%;
-    // height: 100%;
-    // position: absolute;
-    // top: 50px;
-    // left: 0;
-    // height: 100%;
-    // z-index: 1;
-    // background-image: url('../assets/images/readingBed.jpg');
-
     object-fit: cover;
-    border-radius: 20px;
-    position: relative;
     background-size: cover;
-    // background-size: 150% auto;
     background-position: center;
     background-repeat: no-repeat;
 }
-
-    
-}
-
-
-
-
-
 
 
 
@@ -88,39 +35,13 @@
 /* Condition pour tablette */
 /*//////////////////////////////////////////////////////////////////////////*/
 
-@media (min-width: 641px) and (max-width: 1007px){
 .imgMeeting{
-    // width: 100%;
-    // height: 9vw;
-    object-fit: cover;
-    // border-radius: 200px;
-    // margin-top: 12px;
+    object-fit: cover; 
+    object-position: bottom;
 }
 
 .imgShelf{
     object-position: 40% 60%;
-
-}
-.imgMeeting{
-    object-position: bottom;
-}
-
-.imgBed{
-    // width: 65%;
-    object-fit: cover;
-    // border-radius: 20px;
-}
-
-.imgPc{
-    width: 65%;
-    // object-fit: cover;
-    border-radius: 20px;
-}
-
-.imgPile{
-    width: 65%;
-    object-fit: cover;
-    border-radius: 20px;
 }
 
 .wireframe{
@@ -130,15 +51,11 @@
     height: 100%
 }
 
-
 .bgp {
     object-fit: cover;
-    // border-radius: 20px;
-    // position: relative;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
 }
 
 
@@ -156,39 +73,13 @@
 /* Condition pour desktop */
 /*//////////////////////////////////////////////////////////////////////////*/
 
-@media (min-width: 1008px){
-
-// .imgShelf, 
-.imgMeeting{
-    // width: 100%;
-    // height: 9vw;
-    object-fit: cover;
-}
 
 .imgShelf{
     object-position: 40% 60%;
-
-}
-.imgMeeting{
-    object-position: bottom;
 }
 
-.imgBed{
-    // width: 65%;
+.imgBed, .imgMeeting, .imgPc, .imgPile{
     object-fit: cover;
-    // border-radius: 20px;
-}
-
-.imgPc{
-    // width: 65%;
-    object-fit: cover;
-    // border-radius: 20px;
-}
-
-.imgPile{
-    // width: 65%;
-    object-fit: cover;
-    // border-radius: 20px;
 }
 
 .wireframe{
@@ -198,29 +89,8 @@
     height: 100%;
 }
 
-
-
 .bgp {
-    // width: 65%;
-    // height: 100%;
-    // position: absolute;
-    // top: 50px;
-    // left: 0;
-    // height: 100%;
-    // z-index: 1;
-    // background-image: url('../assets/images/readingBed.jpg');
-
     object-fit: cover;
-    // border-radius: 20px;
-    // position: relative;
     background-size: cover;
-    // background-size: 150% auto;
-    background-position: center;
     background-repeat: no-repeat;
-}
-
-
-
-
-
 }
